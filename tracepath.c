@@ -12,6 +12,7 @@
 #define _GNU_SOURCE
 
 #include <assert.h>
+#include <stddef.h>
 #include <arpa/inet.h>
 #include <errno.h>
 #include <limits.h>
@@ -58,6 +59,8 @@ enum {
 	DEFAULT_OVERHEAD_IPV4 = 28,
 	DEFAULT_OVERHEAD_IPV6 = 48,
 
+	MAX_ICMP_MSG_SIZE = 1280,
+
 	DEFAULT_MTU_IPV4 = 65535,
 	DEFAULT_MTU_IPV6 = 128000,
 
@@ -72,8 +75,13 @@ struct hhistory {
 };
 
 struct probehdr {
-	uint32_t ttl;
-	struct timespec ts;
+	union {
+		struct {
+			uint32_t ttl;
+			struct timespec ts;
+		};
+		char buf[MAX_ICMP_MSG_SIZE];
+	};
 };
 
 struct run_state {
@@ -194,7 +202,7 @@ static int recverr(struct run_state *const ctl)
 		retts = &ctl->his[slot].sendtime;
 		ctl->his[slot].hops = 0;
 	}
-	if (recv_size == sizeof(rcvbuf)) {
+	if (recv_size >= (ssize_t)(offsetof(struct probehdr, ts) + sizeof(rcvbuf.ts))) {
 		if (rcvbuf.ttl == 0 || (rcvbuf.ts.tv_sec == 0 && rcvbuf.ts.tv_nsec == 0))
 			broken_router = 1;
 		else {
