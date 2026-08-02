@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-05 14:28+0200\n"
-"PO-Revision-Date: 2026-05-15 09:59+0000\n"
+"PO-Revision-Date: 2026-08-02 00:07+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/iputils/"
 "iputils/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17.1\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #: arping.c:123
 #, c-format
@@ -161,8 +161,7 @@ msgstr "Dispositivo %s no disponible."
 
 #: arping.c:979
 msgid "Suitable device could not be determined. Please, use option -I."
-msgstr ""
-"No pudo ser determinado el dispositivo adaptable. Utilice la opción -I."
+msgstr "No pudo ser determinado el dispositivo adaptable. Utilice la opción -I."
 
 #: arping.c:999
 msgid "WARNING: interface is ignored"
@@ -444,8 +443,7 @@ msgstr "tmp perso. incor: %s"
 
 #: ping/ping.c:613
 msgid "WARNING: reverse DNS resolution (PTR lookup) disabled, enforce with -H"
-msgstr ""
-"AVISO: resolución DNS reversa (PTR lookup) deshabilitada, fuerza con -H"
+msgstr "AVISO: resolución DNS reversa (PTR lookup) deshabilitada, fuerza con -H"
 
 #: ping/ping.c:632
 msgid "WARNING: ident 0 => forcing raw socket"
