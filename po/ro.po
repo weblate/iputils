@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-05 14:28+0200\n"
+"POT-Creation-Date: 2026-08-19 19:59+0200\n"
 "PO-Revision-Date: 2026-08-02 00:05+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/"
@@ -46,16 +46,16 @@ msgstr ""
 "Opțiuni:\n"
 "  -f               iese la primul răspuns\n"
 "  -q               intră în modul silențios\n"
-"  -b               continuă difuzarea în modul „multicast”, nu în modul „"
-"unicast”\n"
+"  -b               continuă difuzarea în modul „multicast”, nu în modul "
+"„unicast”\n"
 "  -D               modul de detectare a adreselor duplicate\n"
 "  -U               modul ARP nesolicitat, actualizează vecinii\n"
 "  -A               modul răspuns ARP, actualizează vecinii\n"
 "  -V               imprimă versiunea și iese\n"
 "  -c <număr>       câte pachete să se trimită\n"
 "  -w <timp de așteptare>  cât timp să aștepte un răspuns\n"
-"  -i <interval>    stabilește intervalul dintre pachete (implicit: 1 secundă)"
-"\n"
+"  -i <interval>    stabilește intervalul dintre pachete (implicit: 1 "
+"secundă)\n"
 "  -I <dispozitiv>  ce dispozitiv ethernet să se utilizeze"
 
 #: arping.c:142
@@ -153,8 +153,8 @@ msgstr "AVERTISMENT: se utilizează adresa de difuzare implicită.\n"
 
 #: arping.c:905 arping.c:908 arping.c:911 ping/ping.c:415 ping/ping.c:465
 #: ping/ping.c:517 ping/ping.c:525 ping/ping.c:569 ping/ping.c:572
-#: ping/ping.c:575 ping/ping.c:588 tracepath.c:474 tracepath.c:477
-#: tracepath.c:480 tracepath.c:502
+#: ping/ping.c:575 ping/ping.c:588 tracepath.c:679 tracepath.c:682
+#: tracepath.c:685 tracepath.c:710
 msgid "invalid argument"
 msgstr "argument nevalid"
 
@@ -1182,8 +1182,8 @@ msgstr ""
 "  -h                     afișează ajutorul și iese\n"
 "  -H                     forțează rezoluția inversă a numelui DNS (util "
 "pentru\n"
-"                         destinații numerice sau pentru „-f”), suprascrie „-n"
-"”\n"
+"                         destinații numerice sau pentru „-f”), suprascrie „-"
+"n”\n"
 "  -I <interfață>         numele sau adresa interfeței\n"
 "  -i <interval>          secunde între trimiterea fiecărui pachet\n"
 "  -j                     ieșire în format JSON (experimental)\n"
@@ -1195,8 +1195,8 @@ msgstr ""
 "  -M <opțiuni-pmtud>     definește descoperirea MTU a rutei, poate fi una "
 "dintre\n"
 "                         <do|dont|want|probe>\n"
-"  -n                     fără rezoluție inversă a numelui DNS, suprascrie „-H"
-"”\n"
+"  -n                     fără rezoluție inversă a numelui DNS, suprascrie „-"
+"H”\n"
 "  -O                     raportează răspunsurile restante\n"
 "  -p <model>             conținutul octetului de umplere\n"
 "  -q                     ieșire silențioasă\n"
@@ -1225,8 +1225,8 @@ msgstr ""
 "\n"
 "Opțiuni IPv6:\n"
 "  -6                     utilizează IPv6\n"
-"  -F <etichetă-flux>     definește eticheta fluxului, implicit este „random"
-"”\n"
+"  -F <etichetă-flux>     definește eticheta fluxului, implicit este "
+"„random”\n"
 "  -N <opțiuni-info_nod>  utilizează interogarea IPv6 cu informații despre "
 "nod,\n"
 "                         încercați <help> ca argument\n"
@@ -1463,7 +1463,32 @@ msgstr "conductă %d"
 msgid "ipg/ewma %s/%s ms"
 msgstr "ipg/ewma %s/%s ms"
 
-#: tracepath.c:218
+#: tracepath.c:267
+#, c-format
+msgid "<Malformed interface information extension>\n"
+msgstr ""
+
+#: tracepath.c:276
+#, c-format
+msgid "Unable to read the ICMP extension header\n"
+msgstr ""
+
+#: tracepath.c:282
+#, c-format
+msgid "Invalid extension version\n"
+msgstr ""
+
+#: tracepath.c:295
+#, c-format
+msgid "Invalid object length\n"
+msgstr ""
+
+#: tracepath.c:304
+#, c-format
+msgid "<unknown object class number (%u)>\n"
+msgstr ""
+
+#: tracepath.c:402
 #, c-format
 msgid ""
 "cmsg6:%d\n"
@@ -1472,7 +1497,7 @@ msgstr ""
 "cmsg6:%d\n"
 " "
 
-#: tracepath.c:230
+#: tracepath.c:414
 #, c-format
 msgid ""
 "cmsg4:%d\n"
@@ -1481,56 +1506,61 @@ msgstr ""
 "cmsg4:%d\n"
 " "
 
-#: tracepath.c:235
+#: tracepath.c:419
 #, c-format
 msgid "no info\n"
 msgstr "nicio informație\n"
 
-#: tracepath.c:239
+#: tracepath.c:423
 msgid "[LOCALHOST]"
 msgstr "[LOCALHOST]"
 
-#: tracepath.c:287
+#: tracepath.c:471
 #, c-format
 msgid "%3lld.%03ldms "
 msgstr "%3lld.%03ldms "
 
-#: tracepath.c:291
+#: tracepath.c:475
 #, c-format
 msgid "(This broken router returned corrupted payload) "
 msgstr "(Acest router defectuos a returnat date corupte) "
 
-#: tracepath.c:306
+#: tracepath.c:493
 #, c-format
 msgid "pmtu %d\n"
 msgstr "pmtu %d\n"
 
-#: tracepath.c:311
+#: tracepath.c:499
 #, c-format
 msgid "reached\n"
 msgstr "atins\n"
 
-#: tracepath.c:328
+#: tracepath.c:516
 #, c-format
 msgid "asymm %2d "
 msgstr "asymm %2d "
 
-#: tracepath.c:343
+#: tracepath.c:532
 msgid "NET ERROR"
 msgstr "EROARE DE REȚEA"
 
-#: tracepath.c:388
+#: tracepath.c:543
+#, c-format
+msgid "ICMP extension is invalid\n"
+msgstr ""
+
+#: tracepath.c:592
 #, c-format
 msgid "%2d?: reply received 8)\n"
 msgstr "%2d?: răspuns primit 8)\n"
 
-#: tracepath.c:394
+#: tracepath.c:598
 #, c-format
 msgid "%2d:  send failed\n"
 msgstr "%2d: trimiterea a eșuat\n"
 
-#: tracepath.c:401
-#, c-format
+#: tracepath.c:605
+#, fuzzy, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1544,6 +1574,7 @@ msgid ""
 "  -m <hops>      use maximum <hops>\n"
 "  -n             no reverse DNS name resolution\n"
 "  -p <port>      use destination <port>\n"
+"  -e             show ICMP extensions (if present)\n"
 "  -V             print version and exit\n"
 "  <destination>  DNS name or IP address\n"
 "\n"
@@ -1566,31 +1597,36 @@ msgstr ""
 "\n"
 "Pentru mai multe detalii, consultați tracepath(8).\n"
 
-#: tracepath.c:459 tracepath.c:464
+#: tracepath.c:664 tracepath.c:669
 msgid "Only one -4 or -6 option may be specified"
 msgstr "Poate fi specificată o singură opțiune „-4” sau „-6”"
 
-#: tracepath.c:607
+#: tracepath.c:827
 #, c-format
 msgid "%2d:  no reply\n"
 msgstr "%2d: fără răspuns\n"
 
-#: tracepath.c:614
+#: tracepath.c:829
+#, fuzzy, c-format
+msgid "     Too many hops: pmtu %d\n"
+msgstr "     Rezumat: pmtu %d "
+
+#: tracepath.c:834
 #, c-format
 msgid "     Resume: pmtu %d "
 msgstr "     Rezumat: pmtu %d "
 
-#: tracepath.c:616
+#: tracepath.c:836
 #, c-format
 msgid "hops %d "
 msgstr "salturi %d "
 
-#: tracepath.c:618
+#: tracepath.c:838
 #, c-format
 msgid "back %d "
 msgstr "returnare %d "
 
-#: tracepath.c:623
+#: tracepath.c:843
 #, c-format
 msgid "pktlen must be within: %d < value <= %d"
 msgstr "pktlen trebuie să fie cuprins între: %d < valoare <= %d"

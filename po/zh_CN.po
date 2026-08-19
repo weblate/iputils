@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-05 14:28+0200\n"
+"POT-Creation-Date: 2026-08-19 19:59+0200\n"
 "PO-Revision-Date: 2026-08-02 00:06+0000\n"
 "Last-Translator: Yang Yulin <yylteam@icloud.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -148,8 +148,8 @@ msgstr "警告：使用默认广播地址。\n"
 
 #: arping.c:905 arping.c:908 arping.c:911 ping/ping.c:415 ping/ping.c:465
 #: ping/ping.c:517 ping/ping.c:525 ping/ping.c:569 ping/ping.c:572
-#: ping/ping.c:575 ping/ping.c:588 tracepath.c:474 tracepath.c:477
-#: tracepath.c:480 tracepath.c:502
+#: ping/ping.c:575 ping/ping.c:588 tracepath.c:679 tracepath.c:682
+#: tracepath.c:685 tracepath.c:710
 msgid "invalid argument"
 msgstr "无效参数"
 
@@ -604,7 +604,8 @@ msgstr ""
 #: ping/ping.c:1270
 #, c-format
 msgid "Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst Data\n"
-msgstr "Vr HL TOS  Len   ID 标记  关闭 TTL Pro  cks      源位置      目标数据\n"
+msgstr ""
+"Vr HL TOS  Len   ID 标记  关闭 TTL Pro  cks      源位置      目标数据\n"
 
 #: ping/ping.c:1271
 #, c-format
@@ -1073,7 +1074,7 @@ msgid "%d data bytes\n"
 msgstr "%d 字节的数据\n"
 
 #: ping/ping_common.c:49
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1250,17 +1251,17 @@ msgid "Warning: invalid tv_sec %ld s"
 msgstr ""
 
 #: ping/ping_common.c:784
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Warning: time of day goes back (%ld s), taking countermeasures"
 msgstr "警告：一天中的时间返回 （%ldus），采取对策"
 
 #: ping/ping_common.c:837
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "%d bytes "
 msgstr "%d 字节的数据 "
 
 #: ping/ping_common.c:839
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "from %s:"
 msgstr "来自 %s"
 
@@ -1323,7 +1324,7 @@ msgid "From %s icmp_seq=%u "
 msgstr "来自 %s icmp_seq=%u "
 
 #: ping/ping_output.c:56
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid " parse error (%s)"
 msgstr " 解析错误 (太短)"
 
@@ -1353,9 +1354,10 @@ msgid "from %s %s: "
 msgstr "来自 %s %s "
 
 #: ping/ping_output.c:149
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "rtt min/avg/max/mdev = %s/%s/%s/%s ms"
-msgstr "rtt 最小/平均/移动平均/最大 = %ld.%03ld/%lu.%03ld/%ld.%03ld/%ld.%03ld ms"
+msgstr ""
+"rtt 最小/平均/移动平均/最大 = %ld.%03ld/%lu.%03ld/%ld.%03ld/%ld.%03ld ms"
 
 #: ping/ping_output.c:165
 #, c-format
@@ -1398,16 +1400,41 @@ msgid ", time %llums"
 msgstr ", 耗时 %llu 毫秒"
 
 #: ping/ping_output.c:194
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "pipe %d"
 msgstr "%s 管道 %d"
 
 #: ping/ping_output.c:210
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "ipg/ewma %s/%s ms"
 msgstr "%sipg/ewma %d.%03d/%d.%03d 毫秒"
 
-#: tracepath.c:218
+#: tracepath.c:267
+#, c-format
+msgid "<Malformed interface information extension>\n"
+msgstr ""
+
+#: tracepath.c:276
+#, c-format
+msgid "Unable to read the ICMP extension header\n"
+msgstr ""
+
+#: tracepath.c:282
+#, c-format
+msgid "Invalid extension version\n"
+msgstr ""
+
+#: tracepath.c:295
+#, c-format
+msgid "Invalid object length\n"
+msgstr ""
+
+#: tracepath.c:304
+#, c-format
+msgid "<unknown object class number (%u)>\n"
+msgstr ""
+
+#: tracepath.c:402
 #, c-format
 msgid ""
 "cmsg6:%d\n"
@@ -1416,7 +1443,7 @@ msgstr ""
 "cmsg6：%d\n"
 " "
 
-#: tracepath.c:230
+#: tracepath.c:414
 #, c-format
 msgid ""
 "cmsg4:%d\n"
@@ -1425,56 +1452,61 @@ msgstr ""
 "cmsg4：%d\n"
 " "
 
-#: tracepath.c:235
+#: tracepath.c:419
 #, c-format
 msgid "no info\n"
 msgstr "没有信息\n"
 
-#: tracepath.c:239
+#: tracepath.c:423
 msgid "[LOCALHOST]"
 msgstr "[本地主机]"
 
-#: tracepath.c:287
+#: tracepath.c:471
 #, c-format
 msgid "%3lld.%03ldms "
 msgstr "%3lld.%03ld 毫秒 "
 
-#: tracepath.c:291
+#: tracepath.c:475
 #, c-format
 msgid "(This broken router returned corrupted payload) "
 msgstr "(这条损坏的路由返回了错误的数据) "
 
-#: tracepath.c:306
+#: tracepath.c:493
 #, c-format
 msgid "pmtu %d\n"
 msgstr "PMTU %d\n"
 
-#: tracepath.c:311
+#: tracepath.c:499
 #, c-format
 msgid "reached\n"
 msgstr "到达\n"
 
-#: tracepath.c:328
+#: tracepath.c:516
 #, c-format
 msgid "asymm %2d "
 msgstr "不对称 %2d "
 
-#: tracepath.c:343
+#: tracepath.c:532
 msgid "NET ERROR"
 msgstr "网络错误"
 
-#: tracepath.c:388
+#: tracepath.c:543
+#, c-format
+msgid "ICMP extension is invalid\n"
+msgstr ""
+
+#: tracepath.c:592
 #, c-format
 msgid "%2d?: reply received 8)\n"
 msgstr "%2d?: 回复已接收 8)\n"
 
-#: tracepath.c:394
+#: tracepath.c:598
 #, c-format
 msgid "%2d:  send failed\n"
 msgstr "%2d:  发送失败\n"
 
-#: tracepath.c:401
-#, c-format
+#: tracepath.c:605
+#, fuzzy, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1488,6 +1520,7 @@ msgid ""
 "  -m <hops>      use maximum <hops>\n"
 "  -n             no reverse DNS name resolution\n"
 "  -p <port>      use destination <port>\n"
+"  -e             show ICMP extensions (if present)\n"
 "  -V             print version and exit\n"
 "  <destination>  DNS name or IP address\n"
 "\n"
@@ -1510,31 +1543,36 @@ msgstr ""
 "\n"
 "了解更多信息请参阅 tracepath(8).\n"
 
-#: tracepath.c:459 tracepath.c:464
+#: tracepath.c:664 tracepath.c:669
 msgid "Only one -4 or -6 option may be specified"
 msgstr "只能使用参数 -4 或 -6 中的一个"
 
-#: tracepath.c:607
+#: tracepath.c:827
 #, c-format
 msgid "%2d:  no reply\n"
 msgstr "%2d:  无应答\n"
 
-#: tracepath.c:614
+#: tracepath.c:829
+#, fuzzy, c-format
+msgid "     Too many hops: pmtu %d\n"
+msgstr "     回程: 路径MTU %d "
+
+#: tracepath.c:834
 #, c-format
 msgid "     Resume: pmtu %d "
 msgstr "     回程: 路径MTU %d "
 
-#: tracepath.c:616
+#: tracepath.c:836
 #, c-format
 msgid "hops %d "
 msgstr "跃点 %d "
 
-#: tracepath.c:618
+#: tracepath.c:838
 #, c-format
 msgid "back %d "
 msgstr "返回 %d "
 
-#: tracepath.c:623
+#: tracepath.c:843
 #, c-format
 msgid "pktlen must be within: %d < value <= %d"
 msgstr "PKTLEN 必须在以下范围内： %d < 值 <= %d"

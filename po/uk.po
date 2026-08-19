@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-05 14:28+0200\n"
+"POT-Creation-Date: 2026-08-19 19:59+0200\n"
 "PO-Revision-Date: 2026-08-02 00:08+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -54,8 +54,8 @@ msgstr ""
 "  -V            вивести дані щодо версії і завершити роботу\n"
 "  -c <к-ть>     кількість пакетів, які слід надіслати\n"
 "  -w <час>      гранична тривалість очікування на відповідь\n"
-"  -i <інтервал> встановити інтервал між пакетами (типове значення: 1 секунда)"
-"\n"
+"  -i <інтервал> встановити інтервал між пакетами (типове значення: 1 "
+"секунда)\n"
 "  -I <пристрій> пристрій ethernet, яким слід скористатися"
 
 #: arping.c:142
@@ -151,8 +151,8 @@ msgstr "Попередження: використовуємо типову ад
 
 #: arping.c:905 arping.c:908 arping.c:911 ping/ping.c:415 ping/ping.c:465
 #: ping/ping.c:517 ping/ping.c:525 ping/ping.c:569 ping/ping.c:572
-#: ping/ping.c:575 ping/ping.c:588 tracepath.c:474 tracepath.c:477
-#: tracepath.c:480 tracepath.c:502
+#: ping/ping.c:575 ping/ping.c:588 tracepath.c:679 tracepath.c:682
+#: tracepath.c:685 tracepath.c:710
 msgid "invalid argument"
 msgstr "некоректний аргумент"
 
@@ -245,8 +245,8 @@ msgstr ""
 "  -V            вивести дані щодо версії і завершити роботу\n"
 "  <призначення> DNS-назва або IP-адреса\n"
 "\n"
-"Щоб дізнатися більше, ознайомтеся зі сторінкою підручника щодо clockdiff(8)"
-".\n"
+"Щоб дізнатися більше, ознайомтеся зі сторінкою підручника щодо "
+"clockdiff(8).\n"
 
 #: clockdiff.c:598
 msgid "measure: unknown failure"
@@ -391,7 +391,8 @@ msgstr "помилкове значення TOS: %s"
 #: ping/ping.c:320
 #, c-format
 msgid "the decimal value of TOS bits must be in range 0-255: %d"
-msgstr "десяткове значення бітів TOS має належати до діапазону від 0 до 255: %d"
+msgstr ""
+"десяткове значення бітів TOS має належати до діапазону від 0 до 255: %d"
 
 #: ping/ping.c:405 ping/ping.c:442
 msgid "only one -4 or -6 option may be specified"
@@ -902,7 +903,8 @@ msgstr "неможливо вимкнути зворотну петлю несп
 
 #: ping/ping6_common.c:364
 msgid "can't set multicast hop limit"
-msgstr "Не вдалося встановити обмеження перестрибувань неспрямованої трансляції"
+msgstr ""
+"Не вдалося встановити обмеження перестрибувань неспрямованої трансляції"
 
 #: ping/ping6_common.c:367
 msgid "can't set unicast hop limit"
@@ -1190,8 +1192,8 @@ msgstr ""
 "  -l <кількість>       надіслати <кількість> пакетів під час очікування "
 "відповідей\n"
 "  -m <позначка>        позначати вихідні пакети\n"
-"  -M <пар pmtud>       визначити режим mtu, одне зі значень "
-"<do|dont|want|probe>\n"
+"  -M <пар pmtud>       визначити режим mtu, одне зі значень <do|dont|want|"
+"probe>\n"
 "  -n                   без визначення назви DNS\n"
 "  -O                   звітувати про нестандартні відповіді\n"
 "  -p <взірець>         вміст байта-доповнення\n"
@@ -1212,8 +1214,8 @@ msgstr ""
 "  -4                   скористатися IPv4\n"
 "  -b                   дозволити трансляцію зондування\n"
 "  -R                   записати маршрут\n"
-"  -T <часова позначка> визначити часову позначку, одне зі значень "
-"<tsonly|tsandaddr|tsprespec>\n"
+"  -T <часова позначка> визначити часову позначку, одне зі значень <tsonly|"
+"tsandaddr|tsprespec>\n"
 "\n"
 "Параметри IPv6:\n"
 "  -6                   скористатися IPv6\n"
@@ -1259,8 +1261,8 @@ msgstr "Попередження: не вдалося встановити по�
 msgid ""
 "=> missing cap_net_admin+p or cap_net_raw+p (since Linux 5.17) capability?"
 msgstr ""
-"=> пропущено можливість cap_net_admin+p або cap_net_raw+p (з часу Linux 5.17)"
-"?"
+"=> пропущено можливість cap_net_admin+p або cap_net_raw+p (з часу Linux "
+"5.17)?"
 
 #: ping/ping_common.c:495
 msgid "WARNING: SO_MARK not supported"
@@ -1454,7 +1456,32 @@ msgstr "канал %d"
 msgid "ipg/ewma %s/%s ms"
 msgstr "ipg/ewma %s/%s мс"
 
-#: tracepath.c:218
+#: tracepath.c:267
+#, c-format
+msgid "<Malformed interface information extension>\n"
+msgstr ""
+
+#: tracepath.c:276
+#, c-format
+msgid "Unable to read the ICMP extension header\n"
+msgstr ""
+
+#: tracepath.c:282
+#, c-format
+msgid "Invalid extension version\n"
+msgstr ""
+
+#: tracepath.c:295
+#, c-format
+msgid "Invalid object length\n"
+msgstr ""
+
+#: tracepath.c:304
+#, c-format
+msgid "<unknown object class number (%u)>\n"
+msgstr ""
+
+#: tracepath.c:402
 #, c-format
 msgid ""
 "cmsg6:%d\n"
@@ -1463,7 +1490,7 @@ msgstr ""
 "cmsg6:%d\n"
 " "
 
-#: tracepath.c:230
+#: tracepath.c:414
 #, c-format
 msgid ""
 "cmsg4:%d\n"
@@ -1472,56 +1499,61 @@ msgstr ""
 "cmsg4:%d\n"
 " "
 
-#: tracepath.c:235
+#: tracepath.c:419
 #, c-format
 msgid "no info\n"
 msgstr "немає даних\n"
 
-#: tracepath.c:239
+#: tracepath.c:423
 msgid "[LOCALHOST]"
 msgstr "[ЛОКАЛЬНИЙ_ВУЗОЛ]"
 
-#: tracepath.c:287
+#: tracepath.c:471
 #, c-format
 msgid "%3lld.%03ldms "
 msgstr "%3lld.%03ldмс "
 
-#: tracepath.c:291
+#: tracepath.c:475
 #, c-format
 msgid "(This broken router returned corrupted payload) "
 msgstr "(Цей помилковий маршрутизатор повернув пошкоджені дані) "
 
-#: tracepath.c:306
+#: tracepath.c:493
 #, c-format
 msgid "pmtu %d\n"
 msgstr "pmtu %d\n"
 
-#: tracepath.c:311
+#: tracepath.c:499
 #, c-format
 msgid "reached\n"
 msgstr "досягнуто\n"
 
-#: tracepath.c:328
+#: tracepath.c:516
 #, c-format
 msgid "asymm %2d "
 msgstr "асим %2d "
 
-#: tracepath.c:343
+#: tracepath.c:532
 msgid "NET ERROR"
 msgstr "ПОМИЛКА МЕРЕЖІ"
 
-#: tracepath.c:388
+#: tracepath.c:543
+#, c-format
+msgid "ICMP extension is invalid\n"
+msgstr ""
+
+#: tracepath.c:592
 #, c-format
 msgid "%2d?: reply received 8)\n"
 msgstr "%2d?: отримано відповідь 8)\n"
 
-#: tracepath.c:394
+#: tracepath.c:598
 #, c-format
 msgid "%2d:  send failed\n"
 msgstr "%2d:  помилка надсилання\n"
 
-#: tracepath.c:401
-#, c-format
+#: tracepath.c:605
+#, fuzzy, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1535,6 +1567,7 @@ msgid ""
 "  -m <hops>      use maximum <hops>\n"
 "  -n             no reverse DNS name resolution\n"
 "  -p <port>      use destination <port>\n"
+"  -e             show ICMP extensions (if present)\n"
 "  -V             print version and exit\n"
 "  <destination>  DNS name or IP address\n"
 "\n"
@@ -1555,34 +1588,39 @@ msgstr ""
 "  -V             вивести дані щодо версії і завершити роботу\n"
 "  <призначення>  назва DNS або IP-адреса\n"
 "\n"
-"Щоб дізнатися більше, ознайомтеся зі сторінкою підручника щодо tracepath(8)"
-".\n"
+"Щоб дізнатися більше, ознайомтеся зі сторінкою підручника щодо "
+"tracepath(8).\n"
 
-#: tracepath.c:459 tracepath.c:464
+#: tracepath.c:664 tracepath.c:669
 msgid "Only one -4 or -6 option may be specified"
 msgstr "Можна вказувати лише один із параметрів — -4 або -6"
 
-#: tracepath.c:607
+#: tracepath.c:827
 #, c-format
 msgid "%2d:  no reply\n"
 msgstr "%2d:  немає відповіді\n"
 
-#: tracepath.c:614
+#: tracepath.c:829
+#, fuzzy, c-format
+msgid "     Too many hops: pmtu %d\n"
+msgstr "     Резюме: pmtu %d "
+
+#: tracepath.c:834
 #, c-format
 msgid "     Resume: pmtu %d "
 msgstr "     Резюме: pmtu %d "
 
-#: tracepath.c:616
+#: tracepath.c:836
 #, c-format
 msgid "hops %d "
 msgstr "перестрибувань %d "
 
-#: tracepath.c:618
+#: tracepath.c:838
 #, c-format
 msgid "back %d "
 msgstr "назад %d "
 
-#: tracepath.c:623
+#: tracepath.c:843
 #, c-format
 msgid "pktlen must be within: %d < value <= %d"
 msgstr "pktlen має задовольняти таку нерівністю: %d < значення <= %d"

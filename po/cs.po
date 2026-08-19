@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-05 14:28+0200\n"
+"POT-Creation-Date: 2026-08-19 19:59+0200\n"
 "PO-Revision-Date: 2026-08-02 00:07+0000\n"
 "Last-Translator: Petr Vorel <petr.vorel@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/iputils/"
@@ -148,8 +148,8 @@ msgstr "POZOR: používá se výchozí všesměrová adresa.\n"
 
 #: arping.c:905 arping.c:908 arping.c:911 ping/ping.c:415 ping/ping.c:465
 #: ping/ping.c:517 ping/ping.c:525 ping/ping.c:569 ping/ping.c:572
-#: ping/ping.c:575 ping/ping.c:588 tracepath.c:474 tracepath.c:477
-#: tracepath.c:480 tracepath.c:502
+#: ping/ping.c:575 ping/ping.c:588 tracepath.c:679 tracepath.c:682
+#: tracepath.c:685 tracepath.c:710
 msgid "invalid argument"
 msgstr "neplatný argument"
 
@@ -1174,8 +1174,8 @@ msgstr ""
 "  -L                   potlačí příjem vlastních multicastových dotazů\n"
 "  -l <přednačítání>    pošle <přednačítání> paketů během čekání na odpovědi\n"
 "  -m <značka>          označí odchozí pakety\n"
-"  -M <pmtud volba>     definuje volbu pro PMTU discovery, jedno z "
-"<do|dont|want|probe>\n"
+"  -M <pmtud volba>     definuje volbu pro PMTU discovery, jedno z <do|dont|"
+"want|probe>\n"
 "  -n                   nepřeloží doménová jména, přebije -H\n"
 "  -O                   nahlásí nevyřízené odpovědi\n"
 "  -p <vzor>            nastaví obsah výplňového bitu\n"
@@ -1195,8 +1195,8 @@ msgstr ""
 "  -4                   použije IPv4\n"
 "  -b                   povolí všesměrový ping\n"
 "  -R                   zaznamenat směrování\n"
-"  -T <časová značka>   definuje časovou značku, jedno z "
-"<tsonly|tsandaddr|tsprespec>\n"
+"  -T <časová značka>   definuje časovou značku, jedno z <tsonly|tsandaddr|"
+"tsprespec>\n"
 "\n"
 "IPv6 volby:\n"
 "  -6                   použije IPv6\n"
@@ -1435,7 +1435,32 @@ msgstr "roura %d"
 msgid "ipg/ewma %s/%s ms"
 msgstr "ipg/ klouz.prům. %s/%s ms"
 
-#: tracepath.c:218
+#: tracepath.c:267
+#, c-format
+msgid "<Malformed interface information extension>\n"
+msgstr ""
+
+#: tracepath.c:276
+#, c-format
+msgid "Unable to read the ICMP extension header\n"
+msgstr ""
+
+#: tracepath.c:282
+#, c-format
+msgid "Invalid extension version\n"
+msgstr ""
+
+#: tracepath.c:295
+#, c-format
+msgid "Invalid object length\n"
+msgstr ""
+
+#: tracepath.c:304
+#, c-format
+msgid "<unknown object class number (%u)>\n"
+msgstr ""
+
+#: tracepath.c:402
 #, c-format
 msgid ""
 "cmsg6:%d\n"
@@ -1444,7 +1469,7 @@ msgstr ""
 "cmsg6:%d\n"
 " "
 
-#: tracepath.c:230
+#: tracepath.c:414
 #, c-format
 msgid ""
 "cmsg4:%d\n"
@@ -1453,56 +1478,61 @@ msgstr ""
 "cmsg4:%d\n"
 " "
 
-#: tracepath.c:235
+#: tracepath.c:419
 #, c-format
 msgid "no info\n"
 msgstr "žádné údaje\n"
 
-#: tracepath.c:239
+#: tracepath.c:423
 msgid "[LOCALHOST]"
 msgstr "[LOCALHOST]"
 
-#: tracepath.c:287
+#: tracepath.c:471
 #, c-format
 msgid "%3lld.%03ldms "
 msgstr "%3lld,%03ld ms "
 
-#: tracepath.c:291
+#: tracepath.c:475
 #, c-format
 msgid "(This broken router returned corrupted payload) "
 msgstr "(Tento rozbitý směrovač vrátil poškozená data) "
 
-#: tracepath.c:306
+#: tracepath.c:493
 #, c-format
 msgid "pmtu %d\n"
 msgstr "PMTU %d\n"
 
-#: tracepath.c:311
+#: tracepath.c:499
 #, c-format
 msgid "reached\n"
 msgstr "dosaženo\n"
 
-#: tracepath.c:328
+#: tracepath.c:516
 #, c-format
 msgid "asymm %2d "
 msgstr "asym. %2d "
 
-#: tracepath.c:343
+#: tracepath.c:532
 msgid "NET ERROR"
 msgstr "CHYBA SÍTĚ"
 
-#: tracepath.c:388
+#: tracepath.c:543
+#, c-format
+msgid "ICMP extension is invalid\n"
+msgstr ""
+
+#: tracepath.c:592
 #, c-format
 msgid "%2d?: reply received 8)\n"
 msgstr "%2d?: přijata odpověď 8)\n"
 
-#: tracepath.c:394
+#: tracepath.c:598
 #, c-format
 msgid "%2d:  send failed\n"
 msgstr "%2d: odeslání se nezdařilo\n"
 
-#: tracepath.c:401
-#, c-format
+#: tracepath.c:605
+#, fuzzy, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1516,6 +1546,7 @@ msgid ""
 "  -m <hops>      use maximum <hops>\n"
 "  -n             no reverse DNS name resolution\n"
 "  -p <port>      use destination <port>\n"
+"  -e             show ICMP extensions (if present)\n"
 "  -V             print version and exit\n"
 "  <destination>  DNS name or IP address\n"
 "\n"
@@ -1538,31 +1569,36 @@ msgstr ""
 "\n"
 "Podrobnosti naleznete v manuálu tracepath(8).\n"
 
-#: tracepath.c:459 tracepath.c:464
+#: tracepath.c:664 tracepath.c:669
 msgid "Only one -4 or -6 option may be specified"
 msgstr "Není možné použije souběžně oba přepínače -4 a -6"
 
-#: tracepath.c:607
+#: tracepath.c:827
 #, c-format
 msgid "%2d:  no reply\n"
 msgstr "%2d: žádná odpověď\n"
 
-#: tracepath.c:614
+#: tracepath.c:829
+#, fuzzy, c-format
+msgid "     Too many hops: pmtu %d\n"
+msgstr "     Obnoveno: PMTU %d "
+
+#: tracepath.c:834
 #, c-format
 msgid "     Resume: pmtu %d "
 msgstr "     Obnoveno: PMTU %d "
 
-#: tracepath.c:616
+#: tracepath.c:836
 #, c-format
 msgid "hops %d "
 msgstr "skoků %d "
 
-#: tracepath.c:618
+#: tracepath.c:838
 #, c-format
 msgid "back %d "
 msgstr "zpět %d "
 
-#: tracepath.c:623
+#: tracepath.c:843
 #, c-format
 msgid "pktlen must be within: %d < value <= %d"
 msgstr "Je třeba, aby délka paketu byla z rozmezí: %d < hodnota <= %d"

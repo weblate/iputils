@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iputils 20161105\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-05 14:28+0200\n"
+"POT-Creation-Date: 2026-08-19 19:59+0200\n"
 "PO-Revision-Date: 2026-08-02 00:06+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
@@ -151,8 +151,8 @@ msgstr "警告: 既定のブロードキャストアドレスを使用してい�
 
 #: arping.c:905 arping.c:908 arping.c:911 ping/ping.c:415 ping/ping.c:465
 #: ping/ping.c:517 ping/ping.c:525 ping/ping.c:569 ping/ping.c:572
-#: ping/ping.c:575 ping/ping.c:588 tracepath.c:474 tracepath.c:477
-#: tracepath.c:480 tracepath.c:502
+#: ping/ping.c:575 ping/ping.c:588 tracepath.c:679 tracepath.c:682
+#: tracepath.c:685 tracepath.c:710
 msgid "invalid argument"
 msgstr "無効な引数です"
 
@@ -164,8 +164,8 @@ msgstr "デバイス %s は使用不能です。"
 #: arping.c:979
 msgid "Suitable device could not be determined. Please, use option -I."
 msgstr ""
-"arping: 適切なデバイスを検出できませんでした。-I オプションを使用してください"
-"。"
+"arping: 適切なデバイスを検出できませんでした。-I オプションを使用してくださ"
+"い。"
 
 #: arping.c:999
 msgid "WARNING: interface is ignored"
@@ -178,7 +178,8 @@ msgstr "警告: setsockopt(SO_DONTROUTE)"
 #: arping.c:1042
 #, c-format
 msgid "Interface \"%s\" is not ARPable (no ll address)\n"
-msgstr "インタフェース \"%s\" ではARPを利用できません (llアドレスがありません)\n"
+msgstr ""
+"インタフェース \"%s\" ではARPを利用できません (llアドレスがありません)\n"
 
 #: arping.c:1051
 #, c-format
@@ -1180,10 +1181,10 @@ msgstr ""
 "  -C                 ソケット生成にconnect()システムコールを使用します\n"
 "  -D                 タイムスタンプを表示します\n"
 "  -d                 SO_DEBUGソケットオプションを使用します\n"
-"  -e <identifier>    pingセッションの識別子を定義します。SOCK_RAWではランダム"
-"、\n"
-"                     SOCK_DGRAMではkernelによる定義値がデフォルトで使用され"
-"、\n"
+"  -e <identifier>    pingセッションの識別子を定義します。SOCK_RAWではランダ"
+"ム、\n"
+"                     SOCK_DGRAMではkernelによる定義値がデフォルトで使用さ"
+"れ、\n"
 "                     IPv4で識別子に0が指定された場合はSOCK_RAWが暗黙的に使用"
 "さ\n"
 "                     れます\n"
@@ -1197,8 +1198,8 @@ msgstr ""
 "  -L                 マルチキャストパケットのループバックを隠蔽します\n"
 "  -l <preload>       応答待ちの間に<preload>個のパケットを送信します\n"
 "  -m <mark>          送信パケットにマークを付与します\n"
-"  -M <pmtud opt>     path MTU discoveryの動作を定義します"
-"。<do|dont|want|probe>\n"
+"  -M <pmtud opt>     path MTU discoveryの動作を定義します。<do|dont|want|"
+"probe>\n"
 "                     のうちいずれか1つを指定します\n"
 "  -n                 DNS逆引きを行いません。-H で上書き可能です\n"
 "  -O                 未応答のパケットを表示します\n"
@@ -1219,8 +1220,8 @@ msgstr ""
 "  -4                 IPv4を使用します\n"
 "  -b                 ブロードキャストpingを許可します\n"
 "  -R                 経路を記録します\n"
-"  -T <timestamp>     タイムスタンプのオプションを<tsonly|tsandaddr|tsprespec>"
-"\n"
+"  -T <timestamp>     タイムスタンプのオプションを<tsonly|tsandaddr|"
+"tsprespec>\n"
 "                     のいずれかに設定します\n"
 "\n"
 "IPv6オプション:\n"
@@ -1265,8 +1266,8 @@ msgstr "警告: マーク %u の設定に失敗しました"
 msgid ""
 "=> missing cap_net_admin+p or cap_net_raw+p (since Linux 5.17) capability?"
 msgstr ""
-"=> cap_net_admin+p or cap_net_raw+p (Linux 5.17以降) ケーパビリティが未"
-"セット?"
+"=> cap_net_admin+p or cap_net_raw+p (Linux 5.17以降) ケーパビリティが未セッ"
+"ト?"
 
 #: ping/ping_common.c:495
 msgid "WARNING: SO_MARK not supported"
@@ -1409,7 +1410,8 @@ msgstr "送信元 %s %s: "
 #: ping/ping_output.c:149
 #, fuzzy, c-format
 msgid "rtt min/avg/max/mdev = %s/%s/%s/%s ms"
-msgstr "rtt 最小/平均/最大/mdev = %ld.%03ld/%lu.%03ld/%ld.%03ld/%ld.%03ldミリ秒"
+msgstr ""
+"rtt 最小/平均/最大/mdev = %ld.%03ld/%lu.%03ld/%ld.%03ld/%ld.%03ldミリ秒"
 
 #: ping/ping_output.c:165
 #, c-format
@@ -1461,7 +1463,32 @@ msgstr "%spipe %d"
 msgid "ipg/ewma %s/%s ms"
 msgstr "%sipg/ewma %d.%03d/%d.%03dミリ秒"
 
-#: tracepath.c:218
+#: tracepath.c:267
+#, c-format
+msgid "<Malformed interface information extension>\n"
+msgstr ""
+
+#: tracepath.c:276
+#, c-format
+msgid "Unable to read the ICMP extension header\n"
+msgstr ""
+
+#: tracepath.c:282
+#, c-format
+msgid "Invalid extension version\n"
+msgstr ""
+
+#: tracepath.c:295
+#, c-format
+msgid "Invalid object length\n"
+msgstr ""
+
+#: tracepath.c:304
+#, c-format
+msgid "<unknown object class number (%u)>\n"
+msgstr ""
+
+#: tracepath.c:402
 #, c-format
 msgid ""
 "cmsg6:%d\n"
@@ -1470,7 +1497,7 @@ msgstr ""
 "cmsg6:%d\n"
 " "
 
-#: tracepath.c:230
+#: tracepath.c:414
 #, c-format
 msgid ""
 "cmsg4:%d\n"
@@ -1479,56 +1506,61 @@ msgstr ""
 "cmsg4:%d\n"
 " "
 
-#: tracepath.c:235
+#: tracepath.c:419
 #, c-format
 msgid "no info\n"
 msgstr "情報なし\n"
 
-#: tracepath.c:239
+#: tracepath.c:423
 msgid "[LOCALHOST]"
 msgstr "[LOCALHOST]"
 
-#: tracepath.c:287
+#: tracepath.c:471
 #, c-format
 msgid "%3lld.%03ldms "
 msgstr "%3lld.%03ldミリ秒 "
 
-#: tracepath.c:291
+#: tracepath.c:475
 #, c-format
 msgid "(This broken router returned corrupted payload) "
 msgstr "(不完全なルーターが破損したデータを返しました) "
 
-#: tracepath.c:306
+#: tracepath.c:493
 #, c-format
 msgid "pmtu %d\n"
 msgstr "pmtu %d\n"
 
-#: tracepath.c:311
+#: tracepath.c:499
 #, c-format
 msgid "reached\n"
 msgstr "到達しました\n"
 
-#: tracepath.c:328
+#: tracepath.c:516
 #, c-format
 msgid "asymm %2d "
 msgstr "asymm %2d "
 
-#: tracepath.c:343
+#: tracepath.c:532
 msgid "NET ERROR"
 msgstr "ネットワークエラー"
 
-#: tracepath.c:388
+#: tracepath.c:543
+#, c-format
+msgid "ICMP extension is invalid\n"
+msgstr ""
+
+#: tracepath.c:592
 #, c-format
 msgid "%2d?: reply received 8)\n"
 msgstr "%2d?: 応答受信 8)\n"
 
-#: tracepath.c:394
+#: tracepath.c:598
 #, c-format
 msgid "%2d:  send failed\n"
 msgstr "%2d:  送信失敗\n"
 
-#: tracepath.c:401
-#, c-format
+#: tracepath.c:605
+#, fuzzy, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1542,6 +1574,7 @@ msgid ""
 "  -m <hops>      use maximum <hops>\n"
 "  -n             no reverse DNS name resolution\n"
 "  -p <port>      use destination <port>\n"
+"  -e             show ICMP extensions (if present)\n"
 "  -V             print version and exit\n"
 "  <destination>  DNS name or IP address\n"
 "\n"
@@ -1565,31 +1598,36 @@ msgstr ""
 "詳細は tracepath(8) を参照してください。\n"
 
 #
-#: tracepath.c:459 tracepath.c:464
+#: tracepath.c:664 tracepath.c:669
 msgid "Only one -4 or -6 option may be specified"
 msgstr "-4 か -6 のどちらか一方のみを使うことができます"
 
-#: tracepath.c:607
+#: tracepath.c:827
 #, c-format
 msgid "%2d:  no reply\n"
 msgstr "%2d:  応答なし\n"
 
-#: tracepath.c:614
+#: tracepath.c:829
+#, fuzzy, c-format
+msgid "     Too many hops: pmtu %d\n"
+msgstr "     要約: pmtu %d "
+
+#: tracepath.c:834
 #, c-format
 msgid "     Resume: pmtu %d "
 msgstr "     要約: pmtu %d "
 
-#: tracepath.c:616
+#: tracepath.c:836
 #, c-format
 msgid "hops %d "
 msgstr "ホップ数 %d "
 
-#: tracepath.c:618
+#: tracepath.c:838
 #, c-format
 msgid "back %d "
 msgstr "戻りホップ数 %d "
 
-#: tracepath.c:623
+#: tracepath.c:843
 #, c-format
 msgid "pktlen must be within: %d < value <= %d"
 msgstr "エラー: pktlenは %d < pktlen <= %d の範囲内でなければいけません"
