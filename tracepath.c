@@ -264,7 +264,7 @@ static void print_iio(const struct icmp_extobj_hdr *objh)
 	return;
 
 err:
-	printf("-Malformed interface information extension>\n");
+	printf(_("<Malformed interface information extension>\n"));
 }
 
 static void print_extension(const char *buf, unsigned int recv_size,
@@ -273,13 +273,13 @@ static void print_extension(const char *buf, unsigned int recv_size,
 	const struct icmp_ext_hdr *hdr;
 
 	if (offset + sizeof(*hdr) > recv_size) {
-		printf("Unable to read the ICMP extension header\n");
+		printf(_("Unable to read the ICMP extension header\n"));
 		return;
 	}
 
 	hdr = (const struct icmp_ext_hdr *) &buf[offset];
 	if (hdr->version != 2) {
-		printf("Invalid extension version\n");
+		printf(_("Invalid extension version\n"));
 		return;
 	}
 
@@ -292,7 +292,7 @@ static void print_extension(const char *buf, unsigned int recv_size,
 		obj_len = ntohs(objh->length);
 
 		if (obj_len + offset > recv_size || obj_len < sizeof(*objh)) {
-			printf("Invalid object length\n");
+			printf(_("Invalid object length\n"));
 			return;
 		}
 
@@ -301,7 +301,7 @@ static void print_extension(const char *buf, unsigned int recv_size,
 			print_iio(objh);
 			break;
 		default:
-			printf("<unknown object class number (%u)>\n",
+			printf(_("<unknown object class number (%u)>\n"),
 			       objh->class_num);
 			break;
 		}
@@ -540,7 +540,7 @@ static int recverr(struct run_state *const ctl)
 				print_extension(rcvbuf.buf, recv_size,
 						e->ee_rfc4884.len);
 		} else {
-			printf("ICMP extension is invalid\n");
+			printf(_("ICMP extension is invalid\n"));
 		}
 #endif
 	}
@@ -826,7 +826,7 @@ int main(int argc, char **argv)
 		if (res < 0)
 			printf(_("%2d:  no reply\n"), ctl.ttl);
 	}
-	printf("     Too many hops: pmtu %d\n", ctl.mtu);
+	printf(_("     Too many hops: pmtu %d\n"), ctl.mtu);
 
  done:
 	freeaddrinfo(result);
