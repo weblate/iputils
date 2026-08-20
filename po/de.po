@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 19:59+0200\n"
-"PO-Revision-Date: 2026-08-02 00:08+0000\n"
+"PO-Revision-Date: 2026-08-21 05:18+0000\n"
 "Last-Translator: Marek Küthe <m.k@mk16.de>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/iputils/"
 "iputils/de/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: arping.c:123
 #, c-format
@@ -1439,27 +1439,27 @@ msgstr "ipg/ewma %s/%s ms"
 #: tracepath.c:267
 #, c-format
 msgid "<Malformed interface information extension>\n"
-msgstr ""
+msgstr "<Fehlerhafte Schnittstelleninformationserweiterung>\n"
 
 #: tracepath.c:276
 #, c-format
 msgid "Unable to read the ICMP extension header\n"
-msgstr ""
+msgstr "Konnte den ICMP-Erweiterungsheader nicht lesen\n"
 
 #: tracepath.c:282
 #, c-format
 msgid "Invalid extension version\n"
-msgstr ""
+msgstr "Ungültige Erweiterungsversion\n"
 
 #: tracepath.c:295
 #, c-format
 msgid "Invalid object length\n"
-msgstr ""
+msgstr "Ungültige Objektlänge\n"
 
 #: tracepath.c:304
 #, c-format
 msgid "<unknown object class number (%u)>\n"
-msgstr ""
+msgstr "<Unbekannte Objektklassennummer (%u)>\n"
 
 #: tracepath.c:402
 #, c-format
