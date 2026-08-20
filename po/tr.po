@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 19:59+0200\n"
-"PO-Revision-Date: 2025-10-05 15:53+0000\n"
+"PO-Revision-Date: 2026-08-21 05:18+0000\n"
 "Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/iputils/"
 "iputils/tr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13.3\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: arping.c:123
 #, c-format
@@ -1434,27 +1434,27 @@ msgstr "ipg/ewma %s/%s ms"
 #: tracepath.c:267
 #, c-format
 msgid "<Malformed interface information extension>\n"
-msgstr ""
+msgstr "<Hatalı arayüz bilgisi uzantısı>\n"
 
 #: tracepath.c:276
 #, c-format
 msgid "Unable to read the ICMP extension header\n"
-msgstr ""
+msgstr "ICMP uzantı başlığı okunamıyor\n"
 
 #: tracepath.c:282
 #, c-format
 msgid "Invalid extension version\n"
-msgstr ""
+msgstr "Geçersiz uzantı sürümü\n"
 
 #: tracepath.c:295
 #, c-format
 msgid "Invalid object length\n"
-msgstr ""
+msgstr "Geçersiz nesne uzunluğu\n"
 
 #: tracepath.c:304
 #, c-format
 msgid "<unknown object class number (%u)>\n"
-msgstr ""
+msgstr "<bilinmeyen nesne sınıf numarası (%u)>\n"
 
 #: tracepath.c:402
 #, c-format
@@ -1515,7 +1515,7 @@ msgstr "AĞ HATASI"
 #: tracepath.c:543
 #, c-format
 msgid "ICMP extension is invalid\n"
-msgstr ""
+msgstr "ICMP uzantısı geçersiz\n"
 
 #: tracepath.c:592
 #, c-format
@@ -1528,7 +1528,7 @@ msgid "%2d:  send failed\n"
 msgstr "%2d:  gönderme başarısız\n"
 
 #: tracepath.c:605
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1560,6 +1560,7 @@ msgstr ""
 "  -m <atlama>    en fazla <atlama> kadar atlama kullan\n"
 "  -n             DNS ad çözümlemesi yok\n"
 "  -p <port>      <port> hedef bağlantı noktasını kullan\n"
+"  -e             ICMP uzantılarını göster (varsa)\n"
 "  -V             sürüm bilgisini yazdır ve çık\n"
 "  <hedef>        DNS adı veya IP adresi\n"
 "\n"
@@ -1575,9 +1576,9 @@ msgid "%2d:  no reply\n"
 msgstr "%2d:  yanıt yok\n"
 
 #: tracepath.c:829
-#, fuzzy, c-format
+#, c-format
 msgid "     Too many hops: pmtu %d\n"
-msgstr "     Devam et: pmtu %d "
+msgstr "     Çok fazla atlama: pmtu %d\n"
 
 #: tracepath.c:834
 #, c-format
