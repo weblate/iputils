@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 19:59+0200\n"
-"PO-Revision-Date: 2026-08-02 00:05+0000\n"
+"PO-Revision-Date: 2026-08-21 05:18+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
 "iputils/iputils/ka/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: arping.c:123
 #, c-format
@@ -1450,27 +1450,27 @@ msgstr "ipg/ewma %s/%s მწმ"
 #: tracepath.c:267
 #, c-format
 msgid "<Malformed interface information extension>\n"
-msgstr ""
+msgstr "<არასწორად ჩამოყალიბებული ინტერფეისის ინფორმაციის გაფართოება>\n"
 
 #: tracepath.c:276
 #, c-format
 msgid "Unable to read the ICMP extension header\n"
-msgstr ""
+msgstr "ICMP-ის გაფართოების თავსართის წაკითხვა შეუძლებელია\n"
 
 #: tracepath.c:282
 #, c-format
 msgid "Invalid extension version\n"
-msgstr ""
+msgstr "არასწორი გაფართოების ვერსია\n"
 
 #: tracepath.c:295
 #, c-format
 msgid "Invalid object length\n"
-msgstr ""
+msgstr "არასწორი ობიექტის სიგრძე\n"
 
 #: tracepath.c:304
 #, c-format
 msgid "<unknown object class number (%u)>\n"
-msgstr ""
+msgstr "<უცნობი ობიექტის კლასის ნომერი (%u)>\n"
 
 #: tracepath.c:402
 #, c-format
@@ -1531,7 +1531,7 @@ msgstr "ქსელის შეცდომა"
 #: tracepath.c:543
 #, c-format
 msgid "ICMP extension is invalid\n"
-msgstr ""
+msgstr "ICMP-ის გაფართოება არასწორია\n"
 
 #: tracepath.c:592
 #, c-format
@@ -1544,7 +1544,7 @@ msgid "%2d:  send failed\n"
 msgstr "%2d:  გაგზავნის შეცდომა\n"
 
 #: tracepath.c:605
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1566,18 +1566,19 @@ msgid ""
 msgstr ""
 "\n"
 "გამოყენება\n"
-"  tracepath [პარამეტრები] <დანიშნულება>\n"
+"  tracepath [პარამეტრები] <სამიზნე>\n"
 "\n"
 "პარამეტრები:\n"
 "  -4             IPv4-ის გამოყენება\n"
 "  -6             IPv6-ის გამოყენება\n"
-"  -b             სახელისა და მისამართის დაბეჭდვა\n"
+"  -b             სახელისა და IP-ის გამოტანა\n"
 "  -l <სიგრძე>    პაკეტის სიგრძის დაყენება\n"
 "  -m <ჰოპები>    ჰოპების რაოდენობის მაქსიმუმი\n"
 "  -n             DNS-ის გადაწყვეტის გამორთვა\n"
 "  -p  <პორტი>    დანიშნულების <პორტის> გამოყენება\n"
+"  -e                            ICMP-ის გაფართოებების ჩვენება (თუ არსებობს)\n"
 "  -V             ვერსიის დაბეჭდვა და გამოსვლა\n"
-"  <დანიშნულება>  DNS სახელი ან IP მისამართი\n"
+"  <სამიზნე>  DNS სახელი ან IP მისამართი\n"
 "\n"
 "მეტი დეტალებისთვის იხილეთ tracepath(8).\n"
 
@@ -1591,9 +1592,9 @@ msgid "%2d:  no reply\n"
 msgstr "%2d:  პასუხის გარეშე\n"
 
 #: tracepath.c:829
-#, fuzzy, c-format
+#, c-format
 msgid "     Too many hops: pmtu %d\n"
-msgstr "     რეზიუმე: pmtu %d "
+msgstr "     მეტისმეტად ბევრი ჰოპი: pmtu %d\n"
 
 #: tracepath.c:834
 #, c-format
