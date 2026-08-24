@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 19:59+0200\n"
-"PO-Revision-Date: 2026-02-01 20:58+0000\n"
-"Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
+"PO-Revision-Date: 2026-08-25 07:18+0000\n"
+"Last-Translator: Emanuele Petriglia <inbox@emanuelepetriglia.com>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/iputils/"
 "iputils/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: arping.c:123
 #, c-format
@@ -1441,27 +1441,27 @@ msgstr "ipg/ewma %s/%s ms"
 #: tracepath.c:267
 #, c-format
 msgid "<Malformed interface information extension>\n"
-msgstr ""
+msgstr "<Estensione delle informazioni sull'interfaccia non valida>\n"
 
 #: tracepath.c:276
 #, c-format
 msgid "Unable to read the ICMP extension header\n"
-msgstr ""
+msgstr "Impossibile leggere l'intestazione dell'estensione ICMP\n"
 
 #: tracepath.c:282
 #, c-format
 msgid "Invalid extension version\n"
-msgstr ""
+msgstr "Versione dell'estensione invalida\n"
 
 #: tracepath.c:295
 #, c-format
 msgid "Invalid object length\n"
-msgstr ""
+msgstr "Lunghezza dell'oggetto non valida\n"
 
 #: tracepath.c:304
 #, c-format
 msgid "<unknown object class number (%u)>\n"
-msgstr ""
+msgstr "<numero di classe dell'oggetto sconosciuto (%u)>\n"
 
 #: tracepath.c:402
 #, c-format
@@ -1522,7 +1522,7 @@ msgstr "ERRORE DI RETE"
 #: tracepath.c:543
 #, c-format
 msgid "ICMP extension is invalid\n"
-msgstr ""
+msgstr "L'estensione ICMP non è valida\n"
 
 #: tracepath.c:592
 #, c-format
@@ -1535,7 +1535,7 @@ msgid "%2d:  send failed\n"
 msgstr "%2d:  invio non riuscito\n"
 
 #: tracepath.c:605
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1557,15 +1557,16 @@ msgid ""
 msgstr ""
 "\n"
 "Uso\n"
+"\n"
 "  tracepath [opzioni] <destinazione>\n"
 "\n"
 "Opzioni:\n"
 "  -4             usa IPv4\n"
 "  -6             usa IPv6\n"
-"  -b             stampa sia il nome che l'IP\n"
+"  -b             stampa sia il nome che l'indirizzo IP\n"
 "  -l <lunghezza> usa pacchetti di <lunghezza>\n"
-"  -m <hop>       usa al massimo <hop>\n"
-"  -n             nessuna risoluzione DNS inversa\n"
+"  -m <hop>       usa un massimo di <hop>\n"
+"  -n             non risolve i nomi tramite DNS inverso\n"
 "  -p <porta>     usa la <porta> di destinazione\n"
 "  -V             stampa la versione ed esce\n"
 "  <destinazione> nome DNS o indirizzo IP\n"
@@ -1582,9 +1583,9 @@ msgid "%2d:  no reply\n"
 msgstr "%2d:  nessuna risposta\n"
 
 #: tracepath.c:829
-#, fuzzy, c-format
+#, c-format
 msgid "     Too many hops: pmtu %d\n"
-msgstr "     Ripristino: pmtu %d "
+msgstr "     Troppi hop: pmtu %d\n"
 
 #: tracepath.c:834
 #, c-format
