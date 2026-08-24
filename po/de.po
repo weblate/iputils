@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 19:59+0200\n"
-"PO-Revision-Date: 2026-08-21 05:18+0000\n"
+"PO-Revision-Date: 2026-08-25 07:18+0000\n"
 "Last-Translator: Marek Küthe <m.k@mk16.de>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/iputils/"
 "iputils/de/>\n"
@@ -1520,7 +1520,7 @@ msgstr "NETZFEHLER"
 #: tracepath.c:543
 #, c-format
 msgid "ICMP extension is invalid\n"
-msgstr ""
+msgstr "ICMP-Erweiterung ist ungültig\n"
 
 #: tracepath.c:592
 #, c-format
@@ -1533,7 +1533,7 @@ msgid "%2d:  send failed\n"
 msgstr "%2d:  Senden fehlgeschlagen\n"
 
 #: tracepath.c:605
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1565,6 +1565,7 @@ msgstr ""
 "  -m <Hops>      Maximale Anzahl der Hops\n"
 "  -n             Keine Rückwerts-DNS-Namensauflösung\n"
 "  -p <Port>      Zielport <Port> verwenden\n"
+"  -e             ICMP-Erweiterungen anzeigen (sofern vorhanden)\n"
 "  -V             Version ausgeben und beenden\n"
 "  <Ziel>         DNS-Name oder IP-Adresse\n"
 "\n"
@@ -1580,9 +1581,9 @@ msgid "%2d:  no reply\n"
 msgstr "%2d:  keine Antwort\n"
 
 #: tracepath.c:829
-#, fuzzy, c-format
+#, c-format
 msgid "     Too many hops: pmtu %d\n"
-msgstr "     Fazit: pmtu %d "
+msgstr "     Zu viele Hops: pmtu %d\n"
 
 #: tracepath.c:834
 #, c-format
