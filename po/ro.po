@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 19:59+0200\n"
-"PO-Revision-Date: 2026-08-02 00:05+0000\n"
+"PO-Revision-Date: 2026-09-01 21:18+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/"
 "iputils/iputils/ro/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: arping.c:123
 #, c-format
@@ -1466,27 +1466,27 @@ msgstr "ipg/ewma %s/%s ms"
 #: tracepath.c:267
 #, c-format
 msgid "<Malformed interface information extension>\n"
-msgstr ""
+msgstr "<Extensie de informații privind interfața cu format incorect>\n"
 
 #: tracepath.c:276
 #, c-format
 msgid "Unable to read the ICMP extension header\n"
-msgstr ""
+msgstr "Nu se poate citi antetul extensiei ICMP\n"
 
 #: tracepath.c:282
 #, c-format
 msgid "Invalid extension version\n"
-msgstr ""
+msgstr "Versiune de extensie nevalidă\n"
 
 #: tracepath.c:295
 #, c-format
 msgid "Invalid object length\n"
-msgstr ""
+msgstr "Lungimea obiectului nu este validă\n"
 
 #: tracepath.c:304
 #, c-format
 msgid "<unknown object class number (%u)>\n"
-msgstr ""
+msgstr "<număr de clasă a obiectului necunoscut (%u)>\n"
 
 #: tracepath.c:402
 #, c-format
@@ -1547,7 +1547,7 @@ msgstr "EROARE DE REȚEA"
 #: tracepath.c:543
 #, c-format
 msgid "ICMP extension is invalid\n"
-msgstr ""
+msgstr "Extensia ICMP nu este validă\n"
 
 #: tracepath.c:592
 #, c-format
@@ -1560,7 +1560,7 @@ msgid "%2d:  send failed\n"
 msgstr "%2d: trimiterea a eșuat\n"
 
 #: tracepath.c:605
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Usage\n"
@@ -1592,6 +1592,7 @@ msgstr ""
 "  -m <salturi>  utilizează maxim <salturi> salturi\n"
 "  -n            fără rezoluție DNS inversă a numelui\n"
 "  -p <port>     utilizează destinația <port>\n"
+"  -e             afișează extensiile ICMP (dacă sunt prezente)\n"
 "  -V            afișează versiunea și iese\n"
 "  <destinație>  nume DNS sau adresă IP\n"
 "\n"
@@ -1607,9 +1608,9 @@ msgid "%2d:  no reply\n"
 msgstr "%2d: fără răspuns\n"
 
 #: tracepath.c:829
-#, fuzzy, c-format
+#, c-format
 msgid "     Too many hops: pmtu %d\n"
-msgstr "     Rezumat: pmtu %d "
+msgstr "     Prea multe salturi: pmtu %d\n"
 
 #: tracepath.c:834
 #, c-format
