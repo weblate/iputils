@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: iputils\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-19 19:59+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-11-23 21:18+0000\n"
+"Last-Translator: Rihards Prieditis <rprieditis@gmail.com>\n"
+"Language-Team: Latvian <https://translate.fedoraproject.org/projects/iputils/"
+"iputils/lv/>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
 "19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
+"X-Generator: Weblate 2026.11.2\n"
 
 #: arping.c:123
 #, c-format
@@ -38,6 +40,23 @@ msgid ""
 "  -i <interval> set interval between packets (default: 1 second)\n"
 "  -I <device>   which ethernet device to use"
 msgstr ""
+"\n"
+"Lietošana:\n"
+"  arping [opcijas] <mērķis>\n"
+"\n"
+"Opcijas:\n"
+"  -f            iziet pēc pirmās atbildes\n"
+"  -q            klusais režīms\n"
+"  -b            turpināt apraidi, nepāriet uz vienraidi\n"
+"  -D            dublētu adrešu noteikšanas režīms\n"
+"  -U            nepieprasītā ARP režīms, atjaunināt kaimiņus\n"
+"  -A            ARP atbildes režīms, atjaunināt kaimiņus\n"
+"  -V            izvadīt versiju un iziet\n"
+"  -c <skaits>   cik pakešu nosūtīt\n"
+"  -w <noildze>  cik ilgi gaidīt atbildi\n"
+"  -i <intervāls>\n"
+"                intervāls starp paketēm (noklusējums: 1 sekunde)\n"
+"  -I <ierīce>   kuru ethernet ierīci izmantot"
 
 #: arping.c:142
 #, c-format
@@ -48,140 +67,145 @@ msgid ""
 "\n"
 "For more details see arping(8).\n"
 msgstr ""
+"\n"
+"  -s <avots>    avota IP adrese\n"
+"  <mērķis>      DNS nosaukums vai IP adrese\n"
+"\n"
+"Sīkāku informāciju skatiet arping(8).\n"
 
 #: arping.c:305
 #, c-format
 msgid "Sent %d probes (%d broadcast(s))\n"
-msgstr ""
+msgstr "Nosūtīti %d zondēšanas pieprasījumi (apraides: %d)\n"
 
 #: arping.c:306
 #, c-format
 msgid "Received %d response(s)"
-msgstr ""
+msgstr "Saņemtas atbildes: %d"
 
 #: arping.c:310
 #, c-format
 msgid "%d request(s)"
-msgstr ""
+msgstr "pieprasījumi: %d"
 
 #: arping.c:312
 #, c-format
 msgid "%s%d broadcast(s)"
-msgstr ""
+msgstr "%sapraides: %d"
 
 #: arping.c:422
 msgid "Unicast"
-msgstr ""
+msgstr "Vienraides"
 
 #: arping.c:422
 msgid "Broadcast"
-msgstr ""
+msgstr "Apraides"
 
 #: arping.c:423
 #, c-format
 msgid "%s from "
-msgstr ""
+msgstr "%s no "
 
 #: arping.c:423
 msgid "reply"
-msgstr ""
+msgstr "atbilde"
 
 #: arping.c:423
 msgid "request"
-msgstr ""
+msgstr "pieprasījums"
 
 #: arping.c:428
 #, c-format
 msgid "for %s "
-msgstr ""
+msgstr "par %s "
 
 #: arping.c:433
 #, c-format
 msgid "for "
-msgstr ""
+msgstr "par "
 
 #: arping.c:443
 #, c-format
 msgid " %ld.%03ldms\n"
-msgstr ""
+msgstr " %ld.%03ld ms\n"
 
 #: arping.c:445
 #, c-format
 msgid " UNSOLICITED?\n"
-msgstr ""
+msgstr " NEPIEPRASĪTS?\n"
 
 #: arping.c:596
 #, c-format
 msgid "Interface \"%s\" is down\n"
-msgstr ""
+msgstr "Saskarne „%s” ir izslēgta\n"
 
 #: arping.c:604
 #, c-format
 msgid "Interface \"%s\" is not ARPable\n"
-msgstr ""
+msgstr "Saskarne „%s” neatbalsta ARP\n"
 
 #: arping.c:697
 #, c-format
 msgid "WARNING: using default broadcast address.\n"
-msgstr ""
+msgstr "BRĪDINĀJUMS: tiek izmantota noklusējuma apraides adrese.\n"
 
 #: arping.c:905 arping.c:908 arping.c:911 ping/ping.c:415 ping/ping.c:465
 #: ping/ping.c:517 ping/ping.c:525 ping/ping.c:569 ping/ping.c:572
 #: ping/ping.c:575 ping/ping.c:588 tracepath.c:679 tracepath.c:682
 #: tracepath.c:685 tracepath.c:710
 msgid "invalid argument"
-msgstr ""
+msgstr "nederīgs arguments"
 
 #: arping.c:978
 #, c-format
 msgid "Device %s not available."
-msgstr ""
+msgstr "Ierīce %s nav pieejama."
 
 #: arping.c:979
 msgid "Suitable device could not be determined. Please, use option -I."
-msgstr ""
+msgstr "Neizdevās noteikt piemērotu ierīci. Lūdzu, izmantojiet opciju -I."
 
 #: arping.c:999
 msgid "WARNING: interface is ignored"
-msgstr ""
+msgstr "BRĪDINĀJUMS: saskarne tiek ignorēta"
 
 #: arping.c:1018
 msgid "WARNING: setsockopt(SO_DONTROUTE)"
-msgstr ""
+msgstr "BRĪDINĀJUMS: setsockopt(SO_DONTROUTE)"
 
 #: arping.c:1042
 #, c-format
 msgid "Interface \"%s\" is not ARPable (no ll address)\n"
-msgstr ""
+msgstr "Saskarne „%s” neatbalsta ARP (nav saites slāņa adreses)\n"
 
 #: arping.c:1051
 #, c-format
 msgid "ARPING %s "
-msgstr ""
+msgstr "ARPING %s "
 
 #: arping.c:1052
 #, c-format
 msgid "from %s %s\n"
-msgstr ""
+msgstr "no %s %s\n"
 
 #: arping.c:1056
 msgid "no source address in not-DAD mode"
-msgstr ""
+msgstr "nav avota adreses režīmā, kas nav DAD"
 
 #: clockdiff.c:242
 #, c-format
 msgid "Wrong timestamp %d\n"
-msgstr ""
+msgstr "Nepareizs laikspiedols %d\n"
 
 #: clockdiff.c:247
 #, c-format
 msgid "Overflow %d hops\n"
-msgstr ""
+msgstr "Pārpilde, lēcieni: %d\n"
 
 #: clockdiff.c:272
 #, c-format
 msgid "wrong timestamps\n"
-msgstr ""
+msgstr "nepareizi laikspiedoli\n"
 
 #: clockdiff.c:453
 #, c-format
@@ -203,25 +227,42 @@ msgid ""
 "\n"
 "For more details see clockdiff(8).\n"
 msgstr ""
+"\n"
+"Lietošana:\n"
+"  clockdiff [opcijas] <mērķis>\n"
+"\n"
+"Opcijas:\n"
+"                bez -o izmantot tikai icmp laikspiedolu (skatiet RFC0792, "
+"16. lpp.)\n"
+"  -o            izmantot IP laikspiedolu un icmp echo\n"
+"  -o1           izmantot trīsdaļīgu IP laikspiedolu un icmp echo\n"
+"  -T, --time-format <ctime|iso>\n"
+"                  norādīt attēlojamā laika formātu, noklusējums ir ctime\n"
+"  -I            --time-format=iso aizstājvārds\n"
+"  -h, --help    parādīt šo palīdzību\n"
+"  -V, --version izvadīt versiju un iziet\n"
+"  <mērķis>      DNS nosaukums vai IP adrese\n"
+"\n"
+"Sīkāku informāciju skatiet clockdiff(8).\n"
 
 #: clockdiff.c:598
 msgid "measure: unknown failure"
-msgstr ""
+msgstr "measure: nezināma kļūme"
 
 #: clockdiff.c:603
 #, c-format
 msgid "%s is down"
-msgstr ""
+msgstr "%s ir izslēgts"
 
 #: clockdiff.c:606
 #, c-format
 msgid "%s time transmitted in a non-standard format"
-msgstr ""
+msgstr "%s laiks pārraidīts nestandarta formātā"
 
 #: clockdiff.c:609
 #, c-format
 msgid "%s is unreachable"
-msgstr ""
+msgstr "%s nav sasniedzams"
 
 #: clockdiff.c:628
 #, c-format
@@ -229,39 +270,41 @@ msgid ""
 "\n"
 "host=%s rtt=%ld(%ld)ms/%ldms delta=%dms/%dms %s\n"
 msgstr ""
+"\n"
+"resursdators=%s rtt=%ld(%ld)ms/%ldms delta=%dms/%dms %s\n"
 
 #: ping/node_info.c:169
 #, c-format
 msgid "Qtype conflict\n"
-msgstr ""
+msgstr "Qtype konflikts\n"
 
 #: ping/node_info.c:221
 #, c-format
 msgid "Subject type conflict\n"
-msgstr ""
+msgstr "Subjekta tipa konflikts\n"
 
 #: ping/node_info.c:312
 #, c-format
 msgid "IDN encoding error: %s"
-msgstr ""
+msgstr "IDN kodēšanas kļūda: %s"
 
 #: ping/node_info.c:323
 msgid "too long scope name"
-msgstr ""
+msgstr "pārāk garš tvēruma nosaukums"
 
 #: ping/node_info.c:347 ping/node_info.c:389 ping/ping.c:1073
 #: ping/ping6_common.c:311
 msgid "memory allocation failed"
-msgstr ""
+msgstr "atmiņas piešķiršana neizdevās"
 
 #: ping/node_info.c:359
 #, c-format
 msgid "inappropriate subject name: %s"
-msgstr ""
+msgstr "nepiemērots subjekta nosaukums: %s"
 
 #: ping/node_info.c:362
 msgid "dn_comp() returned too long result"
-msgstr ""
+msgstr "dn_comp() atgrieza pārāk garu rezultātu"
 
 #: ping/node_info.c:402
 #, c-format
@@ -285,113 +328,134 @@ msgid ""
 "  subject-name=name\n"
 "  subject-fqdn=name\n"
 msgstr ""
+"ping -6 -N <nodeinfo opcija>\n"
+"Palīdzība:\n"
+"  help\n"
+"Vaicājums:\n"
+"  name\n"
+"  ipv6\n"
+"  ipv6-all\n"
+"  ipv6-compatible\n"
+"  ipv6-global\n"
+"  ipv6-linklocal\n"
+"  ipv6-sitelocal\n"
+"  ipv4\n"
+"  ipv4-all\n"
+"Subjekts:\n"
+"  subject-ipv6=addr\n"
+"  subject-ipv4=addr\n"
+"  subject-name=name\n"
+"  subject-fqdn=name\n"
 
 #: ping/ping.c:108 ping/ping.c:738
 #, c-format
 msgid "unknown protocol family: %d"
-msgstr ""
+msgstr "nezināma protokolu saime: %d"
 
 #: ping/ping.c:123
 #, c-format
 msgid "unknown sock type: %d"
-msgstr ""
+msgstr "nezināms ligzdas tips: %d"
 
 #: ping/ping.c:218
 msgid "=> missing cap_net_raw+p capability or setuid?"
-msgstr ""
+msgstr "=> trūkst spējas cap_net_raw+p vai setuid?"
 
 #: ping/ping.c:257
 #, c-format
 msgid "option argument contains garbage: %s"
-msgstr ""
+msgstr "opcijas arguments satur liekus datus: %s"
 
 #: ping/ping.c:258
 msgid "this will become fatal error in the future"
-msgstr ""
+msgstr "nākotnē tā kļūs par fatālu kļūdu"
 
 #: ping/ping.c:292
 #, c-format
 msgid "bad value for flowinfo: %s"
-msgstr ""
+msgstr "nederīga flowinfo vērtība: %s"
 
 #: ping/ping.c:295
 #, c-format
 msgid "flow value is greater than 20 bits: %s"
-msgstr ""
+msgstr "plūsmas vērtība pārsniedz 20 bitus: %s"
 
 #: ping/ping.c:317
 #, c-format
 msgid "bad TOS value: %s"
-msgstr ""
+msgstr "nederīga TOS vērtība: %s"
 
 #: ping/ping.c:320
 #, c-format
 msgid "the decimal value of TOS bits must be in range 0-255: %d"
-msgstr ""
+msgstr "TOS bitu decimālajai vērtībai jābūt robežās 0–255: %d"
 
 #: ping/ping.c:405 ping/ping.c:442
 msgid "only one -4 or -6 option may be specified"
-msgstr ""
+msgstr "var norādīt tikai vienu no opcijām -4 vai -6"
 
 #: ping/ping.c:423 ping/ping.c:428
 msgid "only one of -T or -R may be used"
-msgstr ""
+msgstr "var izmantot tikai vienu no -T vai -R"
 
 #: ping/ping.c:437
 #, c-format
 msgid "invalid timestamp type: %s"
-msgstr ""
+msgstr "nederīgs laikspiedola tips: %s"
 
 #: ping/ping.c:483
 msgid "bad timing interval"
-msgstr ""
+msgstr "nederīgs laika intervāls"
 
 #: ping/ping.c:485
 #, c-format
 msgid "bad timing interval: %s"
-msgstr ""
+msgstr "nederīgs laika intervāls: %s"
 
 #: ping/ping.c:496
 #, c-format
 msgid "cannot copy: %s"
-msgstr ""
+msgstr "nevar nokopēt: %s"
 
 #: ping/ping.c:505
 #, c-format
 msgid "invalid source address: %s"
-msgstr ""
+msgstr "nederīga avota adrese: %s"
 
 #: ping/ping.c:519
 #, c-format
 msgid "cannot set preload to value greater than 3: %d"
-msgstr ""
+msgstr "preload nevar iestatīt uz vērtību, kas lielāka par 3: %d"
 
 #: ping/ping.c:538
 #, c-format
 msgid "invalid -M argument: %s"
-msgstr ""
+msgstr "nederīgs -M arguments: %s"
 
 #: ping/ping.c:594
 msgid "bad linger time"
-msgstr ""
+msgstr "nederīgs linger laiks"
 
 #: ping/ping.c:596
 #, c-format
 msgid "bad linger time: %s"
-msgstr ""
+msgstr "nederīgs linger laiks: %s"
 
 #: ping/ping.c:613
 msgid "WARNING: reverse DNS resolution (PTR lookup) disabled, enforce with -H"
 msgstr ""
+"BRĪDINĀJUMS: reversā DNS atrisināšana (PTR vaicājums) atspējota, piespiest "
+"ar -H"
 
 #: ping/ping.c:632
 msgid "WARNING: ident 0 => forcing raw socket"
 msgstr ""
+"BRĪDINĀJUMS: ident 0 => tiek piespiedu kārtā izmantota neapstrādāta ligzda"
 
 #: ping/ping.c:678
 #, c-format
 msgid "invalid -s value: '%d': out of range: 0 <= value <= %d"
-msgstr ""
+msgstr "nederīga -s vērtība: '%d': ārpus diapazona: 0 <= vērtība <= %d"
 
 #: ping/ping.c:706
 #, c-format
@@ -399,39 +463,43 @@ msgid ""
 "Warning: IPv6 link-local address on ICMP datagram socket may require ifname "
 "or scope-id => use: address%%<ifname|scope-id>"
 msgstr ""
+"Brīdinājums: IPv6 saites lokālai adresei ICMP datagrammu ligzdā var būt "
+"vajadzīgs ifname vai scope-id => izmantojiet: adrese%%<ifname|scope-id>"
 
 #: ping/ping.c:761 ping/ping6_common.c:102
 #, c-format
 msgid "unknown iface: %s"
-msgstr ""
+msgstr "nezināma saskarne: %s"
 
 #: ping/ping.c:883
 msgid "warning: QOS sockopts"
-msgstr ""
+msgstr "brīdinājums: QOS sockopts"
 
 #: ping/ping.c:894
 msgid ""
 "Do you want to ping broadcast? Then -b. If not, check your local firewall "
 "rules"
 msgstr ""
+"Vai vēlaties ping uz apraides adresi? Tad -b. Ja nē, pārbaudiet lokālā "
+"ugunsmūra kārtulas"
 
 #: ping/ping.c:895
 #, c-format
 msgid "WARNING: pinging broadcast address\n"
-msgstr ""
+msgstr "BRĪDINĀJUMS: ping uz apraides adresi\n"
 
 #: ping/ping.c:898 ping/ping.c:1053
 msgid "cannot set broadcasting"
-msgstr ""
+msgstr "nevar iestatīt apraidi"
 
 #: ping/ping.c:919
 msgid "gatifaddrs failed"
-msgstr ""
+msgstr "gatifaddrs neizdevās"
 
 #: ping/ping.c:931 ping/ping6_common.c:228
 #, c-format
 msgid "Warning: source address might be selected on device other than: %s"
-msgstr ""
+msgstr "Brīdinājums: avota adrese var tikt izvēlēta citā ierīcē, nevis: %s"
 
 #: ping/ping.c:947
 #, c-format
@@ -439,38 +507,40 @@ msgid ""
 "minimal interval for broadcast ping for user must be >= %d ms, use -i %s (or "
 "higher)"
 msgstr ""
+"lietotājam minimālajam apraides ping intervālam jābūt >= %d ms, izmantojiet -"
+"i %s (vai lielāku)"
 
 #: ping/ping.c:952
 msgid "broadcast ping does not fragment"
-msgstr ""
+msgstr "apraides ping netiek fragmentēts"
 
 #: ping/ping.c:982
 msgid "WARNING: setsockopt(ICMP_FILTER)"
-msgstr ""
+msgstr "BRĪDINĀJUMS: setsockopt(ICMP_FILTER)"
 
 #: ping/ping.c:987
 msgid "WARNING: your kernel is veeery old. No problems."
-msgstr ""
+msgstr "BRĪDINĀJUMS: jūsu kodols ir ļoooti vecs. Nav problēmu."
 
 #: ping/ping.c:991
 msgid "WARNING: setsockopt(IP_RECVTTL)"
-msgstr ""
+msgstr "BRĪDINĀJUMS: setsockopt(IP_RECVTTL)"
 
 #: ping/ping.c:993
 msgid "WARNING: setsockopt(IP_RETOPTS)"
-msgstr ""
+msgstr "BRĪDINĀJUMS: setsockopt(IP_RETOPTS)"
 
 #: ping/ping.c:1059
 msgid "cannot disable multicast loopback"
-msgstr ""
+msgstr "nevar atspējot multiraides atgriezenisko cilpu"
 
 #: ping/ping.c:1064
 msgid "cannot set multicast time-to-live"
-msgstr ""
+msgstr "nevar iestatīt multiraides dzīves laiku"
 
 #: ping/ping.c:1066
 msgid "cannot set unicast time-to-live"
-msgstr ""
+msgstr "nevar iestatīt vienraides dzīves laiku"
 
 #: ping/ping.c:1107
 #, c-format
@@ -478,6 +548,8 @@ msgid ""
 "\n"
 "NOP"
 msgstr ""
+"\n"
+"NOP"
 
 #: ping/ping.c:1118
 #, c-format
@@ -485,11 +557,13 @@ msgid ""
 "\n"
 "%cSRR: "
 msgstr ""
+"\n"
+"%cSRR: "
 
 #: ping/ping.c:1156
 #, c-format
 msgid "\t(same route)"
-msgstr ""
+msgstr "\t(tas pats maršruts)"
 
 #: ping/ping.c:1161
 #, c-format
@@ -497,6 +571,8 @@ msgid ""
 "\n"
 "RR: "
 msgstr ""
+"\n"
+"RR: "
 
 #: ping/ping.c:1197
 #, c-format
@@ -504,26 +580,28 @@ msgid ""
 "\n"
 "TS: "
 msgstr ""
+"\n"
+"TS: "
 
 #: ping/ping.c:1229
 #, c-format
 msgid "\t%ld absolute not-standard"
-msgstr ""
+msgstr "\t%ld absolūts nestandarta"
 
 #: ping/ping.c:1231
 #, c-format
 msgid "\t%ld not-standard"
-msgstr ""
+msgstr "\t%ld nestandarta"
 
 #: ping/ping.c:1235
 #, c-format
 msgid "\t%ld absolute"
-msgstr ""
+msgstr "\t%ld absolūts"
 
 #: ping/ping.c:1246
 #, c-format
 msgid "Unrecorded hops: %d\n"
-msgstr ""
+msgstr "Nereģistrētie lēcieni: %d\n"
 
 #: ping/ping.c:1250
 #, c-format
@@ -531,263 +609,265 @@ msgid ""
 "\n"
 "unknown option %x"
 msgstr ""
+"\n"
+"nezināma opcija %x"
 
 #: ping/ping.c:1270
 #, c-format
 msgid "Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst Data\n"
-msgstr ""
+msgstr "Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst Data\n"
 
 #: ping/ping.c:1271
 #, c-format
 msgid " %1x  %1x  %02x %04x %04x"
-msgstr ""
+msgstr " %1x  %1x  %02x %04x %04x"
 
 #: ping/ping.c:1273
 #, c-format
 msgid "   %1x %04x"
-msgstr ""
+msgstr "   %1x %04x"
 
 #: ping/ping.c:1275
 #, c-format
 msgid "  %02x  %02x %04x"
-msgstr ""
+msgstr "  %02x  %02x %04x"
 
 #: ping/ping.c:1291
 #, c-format
 msgid "Echo Reply\n"
-msgstr ""
+msgstr "Echo atbilde\n"
 
 #: ping/ping.c:1297
 #, c-format
 msgid "Destination Net Unreachable\n"
-msgstr ""
+msgstr "Mērķa tīkls nav sasniedzams\n"
 
 #: ping/ping.c:1300
 #, c-format
 msgid "Destination Host Unreachable\n"
-msgstr ""
+msgstr "Mērķa resursdators nav sasniedzams\n"
 
 #: ping/ping.c:1303
 #, c-format
 msgid "Destination Protocol Unreachable\n"
-msgstr ""
+msgstr "Mērķa protokols nav sasniedzams\n"
 
 #: ping/ping.c:1306
 #, c-format
 msgid "Destination Port Unreachable\n"
-msgstr ""
+msgstr "Mērķa ports nav sasniedzams\n"
 
 #: ping/ping.c:1309
 #, c-format
 msgid "Frag needed and DF set (mtu = %u)\n"
-msgstr ""
+msgstr "Nepieciešama fragmentēšana, bet iestatīts DF (mtu = %u)\n"
 
 #: ping/ping.c:1312
 #, c-format
 msgid "Source Route Failed\n"
-msgstr ""
+msgstr "Avota maršruts neizdevās\n"
 
 #: ping/ping.c:1315
 #, c-format
 msgid "Destination Net Unknown\n"
-msgstr ""
+msgstr "Mērķa tīkls nav zināms\n"
 
 #: ping/ping.c:1318
 #, c-format
 msgid "Destination Host Unknown\n"
-msgstr ""
+msgstr "Mērķa resursdators nav zināms\n"
 
 #: ping/ping.c:1321
 #, c-format
 msgid "Source Host Isolated\n"
-msgstr ""
+msgstr "Avota resursdators izolēts\n"
 
 #: ping/ping.c:1324
 #, c-format
 msgid "Destination Net Prohibited\n"
-msgstr ""
+msgstr "Mērķa tīkls aizliegts\n"
 
 #: ping/ping.c:1327
 #, c-format
 msgid "Destination Host Prohibited\n"
-msgstr ""
+msgstr "Mērķa resursdators aizliegts\n"
 
 #: ping/ping.c:1330
 #, c-format
 msgid "Destination Net Unreachable for Type of Service\n"
-msgstr ""
+msgstr "Mērķa tīkls nav sasniedzams šim pakalpojuma tipam\n"
 
 #: ping/ping.c:1333
 #, c-format
 msgid "Destination Host Unreachable for Type of Service\n"
-msgstr ""
+msgstr "Mērķa resursdators nav sasniedzams šim pakalpojuma tipam\n"
 
 #: ping/ping.c:1336
 #, c-format
 msgid "Packet filtered\n"
-msgstr ""
+msgstr "Pakete filtrēta\n"
 
 #: ping/ping.c:1339
 #, c-format
 msgid "Precedence Violation\n"
-msgstr ""
+msgstr "Prioritātes pārkāpums\n"
 
 #: ping/ping.c:1342
 #, c-format
 msgid "Precedence Cutoff\n"
-msgstr ""
+msgstr "Prioritātes nogriešana\n"
 
 #: ping/ping.c:1345
 #, c-format
 msgid "Dest Unreachable, Bad Code: %d\n"
-msgstr ""
+msgstr "Mērķis nav sasniedzams, nederīgs kods: %d\n"
 
 #: ping/ping.c:1352
 #, c-format
 msgid "Source Quench\n"
-msgstr ""
+msgstr "Avota apslāpēšana\n"
 
 #: ping/ping.c:1359
 #, c-format
 msgid "Redirect Network"
-msgstr ""
+msgstr "Pāradresēt tīklu"
 
 #: ping/ping.c:1362
 #, c-format
 msgid "Redirect Host"
-msgstr ""
+msgstr "Pāradresēt resursdatoru"
 
 #: ping/ping.c:1365
 #, c-format
 msgid "Redirect Type of Service and Network"
-msgstr ""
+msgstr "Pāradresēt pakalpojuma tipu un tīklu"
 
 #: ping/ping.c:1368
 #, c-format
 msgid "Redirect Type of Service and Host"
-msgstr ""
+msgstr "Pāradresēt pakalpojuma tipu un resursdatoru"
 
 #: ping/ping.c:1371
 #, c-format
 msgid "Redirect, Bad Code: %d"
-msgstr ""
+msgstr "Pāradresācija, nederīgs kods: %d"
 
 #: ping/ping.c:1382
 #, c-format
 msgid "(New nexthop: %s)\n"
-msgstr ""
+msgstr "(Jaunais nākamais lēciens: %s)\n"
 
 #: ping/ping.c:1388
 #, c-format
 msgid "Echo Request\n"
-msgstr ""
+msgstr "Echo pieprasījums\n"
 
 #: ping/ping.c:1394
 #, c-format
 msgid "Time to live exceeded\n"
-msgstr ""
+msgstr "Pārsniegts dzīves laiks\n"
 
 #: ping/ping.c:1397
 #, c-format
 msgid "Frag reassembly time exceeded\n"
-msgstr ""
+msgstr "Pārsniegts fragmentu atkārtotās salikšanas laiks\n"
 
 #: ping/ping.c:1400
 #, c-format
 msgid "Time exceeded, Bad Code: %d\n"
-msgstr ""
+msgstr "Laiks pārsniegts, nederīgs kods: %d\n"
 
 #: ping/ping.c:1407
 #, c-format
 msgid "Parameter problem: pointer = %u\n"
-msgstr ""
+msgstr "Parametra problēma: rādītājs = %u\n"
 
 #: ping/ping.c:1413
 #, c-format
 msgid "Timestamp\n"
-msgstr ""
+msgstr "Laikspiedols\n"
 
 #: ping/ping.c:1417
 #, c-format
 msgid "Timestamp Reply\n"
-msgstr ""
+msgstr "Laikspiedola atbilde\n"
 
 #: ping/ping.c:1421
 #, c-format
 msgid "Information Request\n"
-msgstr ""
+msgstr "Informācijas pieprasījums\n"
 
 #: ping/ping.c:1425
 #, c-format
 msgid "Information Reply\n"
-msgstr ""
+msgstr "Informācijas atbilde\n"
 
 #: ping/ping.c:1430
 #, c-format
 msgid "Address Mask Request\n"
-msgstr ""
+msgstr "Adreses maskas pieprasījums\n"
 
 #: ping/ping.c:1435
 #, c-format
 msgid "Address Mask Reply\n"
-msgstr ""
+msgstr "Adreses maskas atbilde\n"
 
 #: ping/ping.c:1439
 #, c-format
 msgid "Bad ICMP type: %d\n"
-msgstr ""
+msgstr "Nederīgs ICMP tips: %d\n"
 
 #: ping/ping.c:1491 ping/ping6_common.c:540
 msgid "local error"
-msgstr ""
+msgstr "lokāla kļūda"
 
 #: ping/ping.c:1493
 #, c-format
 msgid "local error: message too long, mtu=%u"
-msgstr ""
+msgstr "lokāla kļūda: ziņojums pārāk garš, mtu=%u"
 
 #: ping/ping.c:1641 ping/ping6_common.c:670
 #, c-format
 msgid " icmp_seq=%u"
-msgstr ""
+msgstr " icmp_seq=%u"
 
 #: ping/ping.c:1666
 #, c-format
 msgid "packet too short (%d bytes) from %s"
-msgstr ""
+msgstr "pārāk īsa pakete (%d baiti) no %s"
 
 #: ping/ping.c:1744
 #, c-format
 msgid "From %s: icmp_seq=%u "
-msgstr ""
+msgstr "No %s: icmp_seq=%u "
 
 #: ping/ping.c:1747
 #, c-format
 msgid "(BAD CHECKSUM)"
-msgstr ""
+msgstr "(NEDERĪGA KONTROLSUMMA)"
 
 #: ping/ping.c:1769 ping/ping6_common.c:915
 #, c-format
 msgid "From %s: "
-msgstr ""
+msgstr "No %s: "
 
 #: ping/ping.c:1771
 #, c-format
 msgid "(BAD CHECKSUM)\n"
-msgstr ""
+msgstr "(NEDERĪGA KONTROLSUMMA)\n"
 
 #: ping/ping.c:1873 ping/ping6_common.c:954
 msgid "WARNING: failed to install socket filter"
-msgstr ""
+msgstr "BRĪDINĀJUMS: neizdevās instalēt ligzdas filtru"
 
 #: ping/ping.c:1883
 #, c-format
 msgid "%d(%d) bytes of data.\n"
-msgstr ""
+msgstr "%d(%d) datu baiti.\n"
 
 #: ping/ping6_common.c:149
 msgid "scope discrepancy among the nodes"
-msgstr ""
+msgstr "tvērumu neatbilstība starp mezgliem"
 
 #: ping/ping6_common.c:269
 #, c-format
@@ -795,213 +875,215 @@ msgid ""
 "minimal interval for multicast ping for user must be >= %d ms, use -i %s (or "
 "higher)"
 msgstr ""
+"lietotājam minimālajam multiraides ping intervālam jābūt >= %d ms, "
+"izmantojiet -i %s (vai lielāku)"
 
 #: ping/ping6_common.c:274
 msgid "multicast ping does not fragment"
-msgstr ""
+msgstr "multiraides ping netiek fragmentēts"
 
 #: ping/ping6_common.c:333
 msgid "setsockopt(RAW_CHECKSUM) failed - try to continue"
-msgstr ""
+msgstr "setsockopt(RAW_CHECKSUM) neizdevās — mēģina turpināt"
 
 #: ping/ping6_common.c:359
 msgid "can't disable multicast loopback"
-msgstr ""
+msgstr "nevar atspējot multiraides atgriezenisko cilpu"
 
 #: ping/ping6_common.c:364
 msgid "can't set multicast hop limit"
-msgstr ""
+msgstr "nevar iestatīt multiraides lēcienu ierobežojumu"
 
 #: ping/ping6_common.c:367
 msgid "can't set unicast hop limit"
-msgstr ""
+msgstr "nevar iestatīt vienraides lēcienu ierobežojumu"
 
 #: ping/ping6_common.c:379
 msgid "can't receive hop limit"
-msgstr ""
+msgstr "nevar saņemt lēcienu ierobežojumu"
 
 #: ping/ping6_common.c:393
 msgid "can't set flowlabel"
-msgstr ""
+msgstr "nevar iestatīt plūsmas etiķeti"
 
 #: ping/ping6_common.c:397
 msgid "can't send flowinfo"
-msgstr ""
+msgstr "nevar nosūtīt flowinfo"
 
 #: ping/ping6_common.c:416
 #, c-format
 msgid "Destination unreachable: "
-msgstr ""
+msgstr "Mērķis nav sasniedzams: "
 
 #: ping/ping6_common.c:419
 #, c-format
 msgid "No route"
-msgstr ""
+msgstr "Nav maršruta"
 
 #: ping/ping6_common.c:422
 #, c-format
 msgid "Administratively prohibited"
-msgstr ""
+msgstr "Administratīvi aizliegts"
 
 #: ping/ping6_common.c:425
 #, c-format
 msgid "Beyond scope of source address"
-msgstr ""
+msgstr "Ārpus avota adreses tvēruma"
 
 #: ping/ping6_common.c:428
 #, c-format
 msgid "Address unreachable"
-msgstr ""
+msgstr "Adrese nav sasniedzama"
 
 #: ping/ping6_common.c:431
 #, c-format
 msgid "Port unreachable"
-msgstr ""
+msgstr "Ports nav sasniedzams"
 
 #: ping/ping6_common.c:434
 #, c-format
 msgid "Source address failed ingress/egress policy"
-msgstr ""
+msgstr "Avota adrese neatbilst ieejas/izejas politikai"
 
 #: ping/ping6_common.c:437
 #, c-format
 msgid "Reject route to destination"
-msgstr ""
+msgstr "Noraidīt maršrutu uz mērķi"
 
 #: ping/ping6_common.c:440
 #, c-format
 msgid "Unknown code %d"
-msgstr ""
+msgstr "Nezināms kods %d"
 
 #: ping/ping6_common.c:445
 #, c-format
 msgid "Packet too big: mtu=%u"
-msgstr ""
+msgstr "Pakete pārāk liela: mtu=%u"
 
 #: ping/ping6_common.c:447
 #, c-format
 msgid ", code=%d"
-msgstr ""
+msgstr ", kods=%d"
 
 #: ping/ping6_common.c:450
 #, c-format
 msgid "Time exceeded: "
-msgstr ""
+msgstr "Laiks pārsniegts: "
 
 #: ping/ping6_common.c:452
 #, c-format
 msgid "Hop limit"
-msgstr ""
+msgstr "Lēcienu ierobežojums"
 
 #: ping/ping6_common.c:454
 #, c-format
 msgid "Defragmentation failure"
-msgstr ""
+msgstr "Defragmentēšanas kļūme"
 
 #: ping/ping6_common.c:456
 #, c-format
 msgid "code %d"
-msgstr ""
+msgstr "kods %d"
 
 #: ping/ping6_common.c:459
 #, c-format
 msgid "Parameter problem: "
-msgstr ""
+msgstr "Parametra problēma: "
 
 #: ping/ping6_common.c:461
 #, c-format
 msgid "Wrong header field "
-msgstr ""
+msgstr "Nepareizs galvenes lauks "
 
 #: ping/ping6_common.c:463
 #, c-format
 msgid "Unknown header "
-msgstr ""
+msgstr "Nezināma galvene "
 
 #: ping/ping6_common.c:465
 #, c-format
 msgid "Unknown option "
-msgstr ""
+msgstr "Nezināma opcija "
 
 #: ping/ping6_common.c:467
 #, c-format
 msgid "code %d "
-msgstr ""
+msgstr "kods %d "
 
 #: ping/ping6_common.c:468
 #, c-format
 msgid "at %u"
-msgstr ""
+msgstr "pie %u"
 
 #: ping/ping6_common.c:471
 #, c-format
 msgid "Echo request"
-msgstr ""
+msgstr "Echo pieprasījums"
 
 #: ping/ping6_common.c:474
 #, c-format
 msgid "Echo reply"
-msgstr ""
+msgstr "Echo atbilde"
 
 #: ping/ping6_common.c:477
 #, c-format
 msgid "MLD Query"
-msgstr ""
+msgstr "MLD vaicājums"
 
 #: ping/ping6_common.c:480
 #, c-format
 msgid "MLD Report"
-msgstr ""
+msgstr "MLD ziņojums"
 
 #: ping/ping6_common.c:483
 #, c-format
 msgid "MLD Reduction"
-msgstr ""
+msgstr "MLD samazināšana"
 
 #: ping/ping6_common.c:486
 #, c-format
 msgid "unknown icmp type: %u"
-msgstr ""
+msgstr "nezināms icmp tips: %u"
 
 #: ping/ping6_common.c:542
 #, c-format
 msgid "local error: message too long, mtu: %u"
-msgstr ""
+msgstr "lokāla kļūda: ziņojums pārāk garš, mtu: %u"
 
 #: ping/ping6_common.c:768
 #, c-format
 msgid " unexpected error in inet_ntop(%s)"
-msgstr ""
+msgstr " negaidīta kļūda inet_ntop(%s)"
 
 #: ping/ping6_common.c:799
 #, c-format
 msgid " refused"
-msgstr ""
+msgstr " atteikts"
 
 #: ping/ping6_common.c:802
 #, c-format
 msgid " unknown"
-msgstr ""
+msgstr " nezināms"
 
 #: ping/ping6_common.c:805
 #, c-format
 msgid " unknown code(%02x)"
-msgstr ""
+msgstr " nezināms kods(%02x)"
 
 #: ping/ping6_common.c:807
 #, c-format
 msgid "; seq=%u;"
-msgstr ""
+msgstr "; seq=%u;"
 
 #: ping/ping6_common.c:848
 #, c-format
 msgid "packet too short: %d bytes"
-msgstr ""
+msgstr "pārāk īsa pakete: %d baiti"
 
 #: ping/ping6_common.c:959
 #, c-format
 msgid "%d data bytes\n"
-msgstr ""
+msgstr "%d datu baiti\n"
 
 #: ping/ping_common.c:49
 #, c-format
@@ -1065,43 +1147,107 @@ msgid ""
 "\n"
 "For more details see ping(8).\n"
 msgstr ""
+"\n"
+"Lietošana\n"
+"  ping [opcijas] <mērķis>\n"
+"\n"
+"Opcijas:\n"
+"  <mērķis>           DNS nosaukums vai IP adrese\n"
+"  -3                 RTT precizitāte (nenoapaļot rezultāta laiku)\n"
+"  -a                 izmantot dzirdamu ping\n"
+"  -A                 izmantot adaptīvu ping\n"
+"  -B                 lipīga avota adrese\n"
+"  -c <skaits>        apstāties pēc <skaits> atbildēm\n"
+"  -C                 ligzdas izveidē izsaukt sistēmas izsaukumu connect()\n"
+"  -D                 izvadīt laikspiedolus\n"
+"  -d                 izmantot ligzdas opciju SO_DEBUG\n"
+"  -e <identifikators>\n"
+"                     definēt ping sesijas identifikatoru; noklusējums ir "
+"nejaušs\n"
+"                     SOCK_RAW un kodola noteikts SOCK_DGRAM\n"
+"                     Nozīmē SOCK_RAW izmantošanu (IPv4 tikai identifikatoram "
+"0)\n"
+"  -f                 plūdu ping\n"
+"  -h                 izvadīt palīdzību un iziet\n"
+"  -H                 piespiedu reversā DNS nosaukumu atrisināšana (noder "
+"skaitliskiem\n"
+"                     mērķiem vai ar -f), aizstāj -n\n"
+"  -I <saskarne>      saskarnes nosaukums vai adrese\n"
+"  -i <intervāls>     sekundes starp katras paketes nosūtīšanu\n"
+"  -j                 JSON izvade (eksperimentāla)\n"
+"  -L                 nerādīt multiraides pakešu atgriezenisko cilpu\n"
+"  -l <priekšielāde>  gaidot atbildes, nosūtīt <priekšielāde> paketes\n"
+"  -m <atzīme>        atzīmēt izejošās paketes\n"
+"  -M <pmtud opcija>  definēt ceļa MTU noteikšanu, viens no "
+"<do|dont|want|probe>\n"
+"  -n                 bez reversās DNS nosaukumu atrisināšanas, aizstāj -H\n"
+"  -O                 ziņot par nesaņemtām atbildēm\n"
+"  -p <paraugs>       aizpildījuma baita saturs\n"
+"  -q                 klusa izvade\n"
+"  -Q <tclass>        izmantot pakalpojuma kvalitātes <tclass> bitus\n"
+"  -s <izmērs>        izmantot <izmērs> kā nosūtāmo datu baitu skaitu\n"
+"  -S <izmērs>        izmantot <izmērs> kā ligzdas opcijas SO_SNDBUF vērtību\n"
+"  -t <ttl>           definēt dzīves laiku (TTL)\n"
+"  -U                 izvadīt latentumu starp lietotājiem\n"
+"  -v                 detalizēta izvade\n"
+"  -V                 izvadīt versiju un iziet\n"
+"  -w <termiņš>       atbildes gaidīšanas <termiņš> sekundēs\n"
+"  -W <noildze>       atbildes gaidīšanas laiks\n"
+"\n"
+"IPv4 opcijas:\n"
+"  -4                 izmantot IPv4\n"
+"  -b                 atļaut ping apraides adresei\n"
+"  -R                 reģistrēt maršrutu\n"
+"  -T <laikspiedols>  definēt laikspiedolu, viens no "
+"<tsonly|tsandaddr|tsprespec>\n"
+"\n"
+"IPv6 opcijas:\n"
+"  -6                 izmantot IPv6\n"
+"  -F <plūsmas etiķete>\n"
+"                     definēt plūsmas etiķeti, noklusējums ir nejauša\n"
+"  -N <nodeinfo opcija>\n"
+"                     izmantot IPv6 mezgla informācijas vaicājumu, mēģiniet "
+"argumentu <help>\n"
+"\n"
+"Sīkāku informāciju skatiet ping(8).\n"
 
 #: ping/ping_common.c:219
 #, c-format
 msgid "patterns must be specified as hex digits: %s"
-msgstr ""
+msgstr "šabloni jānorāda kā heksadecimāli cipari: %s"
 
 #: ping/ping_common.c:234
 #, c-format
 msgid "PATTERN: 0x"
-msgstr ""
+msgstr "ŠABLONS: 0x"
 
 #: ping/ping_common.c:355
 #, c-format
 msgid "no answer yet for icmp_seq=%lu\n"
-msgstr ""
+msgstr "vēl nav atbildes icmp_seq=%lu\n"
 
 #: ping/ping_common.c:454
 msgid "WARNING: buffer size overflow, reduce packet size or preload"
 msgstr ""
+"BRĪDINĀJUMS: bufera izmēra pārpilde, samaziniet paketes izmēru vai preload"
 
 #: ping/ping_common.c:468
 msgid "WARNING: probably, rcvbuf is not enough to hold preload"
-msgstr ""
+msgstr "BRĪDINĀJUMS: iespējams, rcvbuf nepietiek preload uzglabāšanai"
 
 #: ping/ping_common.c:487
 #, c-format
 msgid "WARNING: failed to set mark: %u"
-msgstr ""
+msgstr "BRĪDINĀJUMS: neizdevās iestatīt atzīmi: %u"
 
 #: ping/ping_common.c:490
 msgid ""
 "=> missing cap_net_admin+p or cap_net_raw+p (since Linux 5.17) capability?"
-msgstr ""
+msgstr "=> trūkst spējas cap_net_admin+p vai cap_net_raw+p (kopš Linux 5.17)?"
 
 #: ping/ping_common.c:495
 msgid "WARNING: SO_MARK not supported"
-msgstr ""
+msgstr "BRĪDINĀJUMS: SO_MARK netiek atbalstīts"
 
 #: ping/ping_common.c:511
 #, c-format
@@ -1109,70 +1255,73 @@ msgid ""
 "cannot flood, minimal interval for user must be >= %d ms, use -i %s (or "
 "higher)"
 msgstr ""
+"nevar veikt plūdus, lietotājam minimālajam intervālam jābūt >= %d ms, "
+"izmantojiet -i %s (vai lielāku)"
 
 #: ping/ping_common.c:515
 #, c-format
 msgid "illegal preload and/or interval: %d"
-msgstr ""
+msgstr "neatļauts preload un/vai intervāls: %d"
 
 #: ping/ping_common.c:527
 msgid "Warning: no SO_TIMESTAMP support, falling back to SIOCGSTAMP"
-msgstr ""
+msgstr "Brīdinājums: nav SO_TIMESTAMP atbalsta, tiek izmantots SIOCGSTAMP"
 
 #: ping/ping_common.c:771 ping/ping_common.c:776
 #, c-format
 msgid "Warning: invalid tv_usec %ld us"
-msgstr ""
+msgstr "Brīdinājums: nederīgs tv_usec %ld us"
 
 #: ping/ping_common.c:781
 #, c-format
 msgid "Warning: invalid tv_sec %ld s"
-msgstr ""
+msgstr "Brīdinājums: nederīgs tv_sec %ld s"
 
 #: ping/ping_common.c:784
 #, c-format
 msgid "Warning: time of day goes back (%ld s), taking countermeasures"
 msgstr ""
+"Brīdinājums: diennakts laiks iet atpakaļ (%ld s), tiek veikti pretpasākumi"
 
 #: ping/ping_common.c:837
 #, c-format
 msgid "%d bytes "
-msgstr ""
+msgstr "%d baiti "
 
 #: ping/ping_common.c:839
 #, c-format
 msgid "from %s:"
-msgstr ""
+msgstr "no %s:"
 
 #: ping/ping_common.c:845
 #, c-format
 msgid " ident=%d"
-msgstr ""
+msgstr " ident=%d"
 
 #: ping/ping_common.c:848
 #, c-format
 msgid " ttl=%d"
-msgstr ""
+msgstr " ttl=%d"
 
 #: ping/ping_common.c:880
 #, c-format
 msgid " time=%s ms"
-msgstr ""
+msgstr " time=%s ms"
 
 #: ping/ping_common.c:884
 #, c-format
 msgid " (DUP!)"
-msgstr ""
+msgstr " (DUBLIKĀTS!)"
 
 #: ping/ping_common.c:886
 #, c-format
 msgid " (BAD CHECKSUM!)"
-msgstr ""
+msgstr " (NEDERĪGA KONTROLSUMMA!)"
 
 #: ping/ping_common.c:888
 #, c-format
 msgid " (DIFFERENT ADDRESS!)"
-msgstr ""
+msgstr " (CITA ADRESE!)"
 
 #: ping/ping_common.c:895
 #, c-format
@@ -1180,135 +1329,137 @@ msgid ""
 "\n"
 "wrong data byte #%d should be 0x%x but was 0x%x"
 msgstr ""
+"\n"
+"nepareizs datu baits #%d, jābūt 0x%x, bet bija 0x%x"
 
 #: ping/ping_common.c:932
 #, c-format
 msgid "%ld/%ld packets, %d%% loss"
-msgstr ""
+msgstr "%ld/%ld paketes, %d%% zudums"
 
 #: ping/ping_common.c:937
 #, c-format
 msgid ", min/avg/ewma/max = %ld.%03ld/%lu.%03ld/%d.%03d/%ld.%03ld ms"
-msgstr ""
+msgstr ", min/avg/ewma/max = %ld.%03ld/%lu.%03ld/%d.%03d/%ld.%03ld ms"
 
 #: ping/ping_json.c:17
 msgid "Overflow during JSON construction"
-msgstr ""
+msgstr "Pārpilde JSON veidošanas laikā"
 
 #: ping/ping_output.c:50
 #, c-format
 msgid "From %s icmp_seq=%u "
-msgstr ""
+msgstr "No %s icmp_seq=%u "
 
 #: ping/ping_output.c:56
 #, c-format
 msgid " parse error (%s)"
-msgstr ""
+msgstr " parsēšanas kļūda (%s)"
 
 #: ping/ping_output.c:64
 #, c-format
 msgid " unknown qtype(0x%02x)"
-msgstr ""
+msgstr " nezināms qtype(0x%02x)"
 
 #: ping/ping_output.c:76
 #, c-format
 msgid " (truncated)"
-msgstr ""
+msgstr " (saīsināts)"
 
 #: ping/ping_output.c:85
 #, c-format
 msgid "PING %s (%s) "
-msgstr ""
+msgstr "PING %s (%s) "
 
 #: ping/ping_output.c:88
 #, c-format
 msgid ", flow 0x%05x, "
-msgstr ""
+msgstr ", plūsma 0x%05x, "
 
 #: ping/ping_output.c:96
 #, c-format
 msgid "from %s %s: "
-msgstr ""
+msgstr "no %s %s: "
 
 #: ping/ping_output.c:149
 #, c-format
 msgid "rtt min/avg/max/mdev = %s/%s/%s/%s ms"
-msgstr ""
+msgstr "rtt min/avg/max/mdev = %s/%s/%s/%s ms"
 
 #: ping/ping_output.c:165
 #, c-format
 msgid "--- %s ping statistics ---\n"
-msgstr ""
+msgstr "--- %s ping statistika ---\n"
 
 #: ping/ping_output.c:166
 #, c-format
 msgid "%ld packets transmitted, "
-msgstr ""
+msgstr "nosūtītas paketes: %ld, "
 
 #: ping/ping_output.c:167
 #, c-format
 msgid "%ld received"
-msgstr ""
+msgstr "saņemtas: %ld"
 
 #: ping/ping_output.c:169
 #, c-format
 msgid ", +%ld duplicates"
-msgstr ""
+msgstr ", +%ld dublikāti"
 
 #: ping/ping_output.c:171
 #, c-format
 msgid ", +%ld corrupted"
-msgstr ""
+msgstr ", +%ld bojātas"
 
 #: ping/ping_output.c:173
 #, c-format
 msgid ", +%ld errors"
-msgstr ""
+msgstr ", +%ld kļūdas"
 
 #: ping/ping_output.c:179
 #, c-format
 msgid ", %g%% packet loss"
-msgstr ""
+msgstr ", %g%% pakešu zudums"
 
 #: ping/ping_output.c:181
 #, c-format
 msgid ", time %llums"
-msgstr ""
+msgstr ", laiks %llu ms"
 
 #: ping/ping_output.c:194
 #, c-format
 msgid "pipe %d"
-msgstr ""
+msgstr "cauruļvads %d"
 
 #: ping/ping_output.c:210
 #, c-format
 msgid "ipg/ewma %s/%s ms"
-msgstr ""
+msgstr "ipg/ewma %s/%s ms"
 
 #: tracepath.c:267
 #, c-format
 msgid "<Malformed interface information extension>\n"
-msgstr ""
+msgstr "<Nepareizi veidots saskarnes informācijas paplašinājums>\n"
 
 #: tracepath.c:276
 #, c-format
 msgid "Unable to read the ICMP extension header\n"
-msgstr ""
+msgstr "Neizdodas nolasīt ICMP paplašinājuma galveni\n"
 
 #: tracepath.c:282
 #, c-format
 msgid "Invalid extension version\n"
-msgstr ""
+msgstr "Nederīga paplašinājuma versija\n"
 
 #: tracepath.c:295
 #, c-format
 msgid "Invalid object length\n"
-msgstr ""
+msgstr "Nederīgs objekta garums\n"
 
 #: tracepath.c:304
 #, c-format
 msgid "<unknown object class number (%u)>\n"
-msgstr ""
+msgstr "<nezināms objekta klases numurs (%u)>\n"
 
 #: tracepath.c:402
 #, c-format
@@ -1316,6 +1467,8 @@ msgid ""
 "cmsg6:%d\n"
 " "
 msgstr ""
+"cmsg6:%d\n"
+" "
 
 #: tracepath.c:414
 #, c-format
@@ -1323,59 +1476,61 @@ msgid ""
 "cmsg4:%d\n"
 " "
 msgstr ""
+"cmsg4:%d\n"
+" "
 
 #: tracepath.c:419
 #, c-format
 msgid "no info\n"
-msgstr ""
+msgstr "nav informācijas\n"
 
 #: tracepath.c:423
 msgid "[LOCALHOST]"
-msgstr ""
+msgstr "[LOCALHOST]"
 
 #: tracepath.c:471
 #, c-format
 msgid "%3lld.%03ldms "
-msgstr ""
+msgstr "%3lld.%03ld ms "
 
 #: tracepath.c:475
 #, c-format
 msgid "(This broken router returned corrupted payload) "
-msgstr ""
+msgstr "(Šis bojātais maršrutētājs atgrieza bojātu saturu) "
 
 #: tracepath.c:493
 #, c-format
 msgid "pmtu %d\n"
-msgstr ""
+msgstr "pmtu %d\n"
 
 #: tracepath.c:499
 #, c-format
 msgid "reached\n"
-msgstr ""
+msgstr "sasniegts\n"
 
 #: tracepath.c:516
 #, c-format
 msgid "asymm %2d "
-msgstr ""
+msgstr "asimetr. %2d "
 
 #: tracepath.c:532
 msgid "NET ERROR"
-msgstr ""
+msgstr "TĪKLA KĻŪDA"
 
 #: tracepath.c:543
 #, c-format
 msgid "ICMP extension is invalid\n"
-msgstr ""
+msgstr "ICMP paplašinājums nav derīgs\n"
 
 #: tracepath.c:592
 #, c-format
 msgid "%2d?: reply received 8)\n"
-msgstr ""
+msgstr "%2d?: saņemta atbilde 8)\n"
 
 #: tracepath.c:598
 #, c-format
 msgid "%2d:  send failed\n"
-msgstr ""
+msgstr "%2d:  sūtīšana neizdevās\n"
 
 #: tracepath.c:605
 #, c-format
@@ -1398,37 +1553,54 @@ msgid ""
 "\n"
 "For more details see tracepath(8).\n"
 msgstr ""
+"\n"
+"Lietošana\n"
+"  tracepath [opcijas] <mērķis>\n"
+"\n"
+"Opcijas:\n"
+"  -4             izmantot IPv4\n"
+"  -6             izmantot IPv6\n"
+"  -b             izvadīt gan nosaukumu, gan IP\n"
+"  -l <garums>    izmantot paketes garumu <garums>\n"
+"  -m <lēcieni>   izmantot maksimāli <lēcieni> lēcienus\n"
+"  -n             bez reversās DNS nosaukumu atrisināšanas\n"
+"  -p <ports>     izmantot mērķa portu <ports>\n"
+"  -e             rādīt ICMP paplašinājumus (ja ir)\n"
+"  -V             izvadīt versiju un iziet\n"
+"  <mērķis>       DNS nosaukums vai IP adrese\n"
+"\n"
+"Sīkāku informāciju skatiet tracepath(8).\n"
 
 #: tracepath.c:664 tracepath.c:669
 msgid "Only one -4 or -6 option may be specified"
-msgstr ""
+msgstr "Var norādīt tikai vienu no opcijām -4 vai -6"
 
 #: tracepath.c:827
 #, c-format
 msgid "%2d:  no reply\n"
-msgstr ""
+msgstr "%2d:  nav atbildes\n"
 
 #: tracepath.c:829
 #, c-format
 msgid "     Too many hops: pmtu %d\n"
-msgstr ""
+msgstr "     Pārāk daudz lēcienu: pmtu %d\n"
 
 #: tracepath.c:834
 #, c-format
 msgid "     Resume: pmtu %d "
-msgstr ""
+msgstr "     Atsākt: pmtu %d "
 
 #: tracepath.c:836
 #, c-format
 msgid "hops %d "
-msgstr ""
+msgstr "lēcieni %d "
 
 #: tracepath.c:838
 #, c-format
 msgid "back %d "
-msgstr ""
+msgstr "atpakaļ %d "
 
 #: tracepath.c:843
 #, c-format
 msgid "pktlen must be within: %d < value <= %d"
-msgstr ""
+msgstr "pktlen jābūt robežās: %d < vērtība <= %d"
